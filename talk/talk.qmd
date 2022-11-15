@@ -1,5 +1,5 @@
 ---
-title: "Talk template" 
+title: "Toward an Open Science Ecosystem in Neuroimaging" 
 author: Russ Poldrack
 institute: Stanford University
 title-slide-attributes:
@@ -7,7 +7,7 @@ title-slide-attributes:
     data-background-opacity: "0.5"
 format:
   revealjs: 
-    footer: "https://poldrack.github.io/talks-template/"
+    footer: "https://poldrack.github.io/talks-OpenScienceEcosystem/"
     slide-number: true
     chalkboard: 
       buttons: false

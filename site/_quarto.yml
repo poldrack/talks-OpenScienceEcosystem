@@ -3,10 +3,10 @@ project:
   output-dir: ../docs
 
 website:
-  title: "Template talk"
+  title: "Toward an Open Science Ecosystem in Neuroimaging"
   navbar:
     left:
-      - href: https://github.com/poldrack/talks-template
+      - href: https://github.com/poldrack/talks-OpenScienceEcosystem
         text: Github page
 
 format:
