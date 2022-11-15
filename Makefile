@@ -1,5 +1,5 @@
 # This tag should match the release tag in Github
-TAG = "Topic_Venue_Month_Day_Year"
+TAG = "OpenScienceEcosystem_Ottawa_11_28_2022"
 
 
 all: render-talk render-pdf render-site
