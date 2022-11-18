@@ -660,7 +660,7 @@ Vilfredo Pareto
 
 ## Conclusions
 <div style='font-size: 1.3em'>
-- The field of neuroimaging has built an enviable ecosystem for open science
+- The field of neuroimaging has built an model ecosystem for open science and data sharing
 - Infrastructure is critical to ease friction
 - Community engagement has been key to adoption
 - Need to keep the tools as close as possible to current practice

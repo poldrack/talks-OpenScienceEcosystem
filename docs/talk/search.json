@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "talk.html#template-slide",
-    "href": "talk.html#template-slide",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Template slide",
-    "text": "Template slide\n\n\nhttps://poldrack.github.io/talks-OpenScienceEcosystem/"
-  },
-  {
     "objectID": "talk.html#section",
     "href": "talk.html#section",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
@@ -19,6 +12,13 @@
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
     "text": "“we can distill Claerbout’s insight into a slogan:\nAn article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures..”\n\nBuckheit & Donoho, 1995\n\n\n\n\n\n\nJon Claerbout"
+  },
+  {
+    "objectID": "talk.html#why-neuroimaging-is-a-best-case-scenario-for-open-science",
+    "href": "talk.html#why-neuroimaging-is-a-best-case-scenario-for-open-science",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "Why neuroimaging is a best-case scenario for open science",
+    "text": "Why neuroimaging is a best-case scenario for open science\n\n\n\n\nMagnetic resonance imaging (MRI) is the primary tool for studying human brain structure and function\nMRI data are digital end-to-end\n\nFrom MRI scanner to automated analysis\nUsually zero/few manual analysis steps\n\nThe field has largely converged on:\n\na standardized image format (NiFTI)\na ~common spatial coordinate system"
   },
   {
     "objectID": "talk.html#a-false-start-for-fmri-data-sharing",
@@ -35,11 +35,11 @@
     "text": "A false start for fMRI data sharing\n\n\n\n\n\nThis letter comes from a group of scientists who are publishing papers using fMRI to understand the links between brain and behavior. We are writing in reaction the recent announcement of the creation of the National fMRI Data Center (www.fmridc.org). In the letter announcing the creation of the center, it was also implied that leading journals in our field may require authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center. … We are particularly concerned with any journal’s decision to require all authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center."
   },
   {
-    "objectID": "talk.html#why-neuroimaging-is-a-best-case-scenario-for-open-science",
-    "href": "talk.html#why-neuroimaging-is-a-best-case-scenario-for-open-science",
+    "objectID": "talk.html#the-year-data-sharing-broke-in-neuroimaging",
+    "href": "talk.html#the-year-data-sharing-broke-in-neuroimaging",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Why neuroimaging is a best-case scenario for open science",
-    "text": "Why neuroimaging is a best-case scenario for open science\n\n\n\n\nMagnetic resonance imaging (MRI) is the primary tool for studying human brain structure and function\nMRI data are digital end-to-end\n\nFrom MRI scanner to automated analysis\nUsually zero/few manual analysis steps\n\nThe field has largely converged on:\n\na standardized image format (NiFTI)\na ~common spatial coordinate system"
+    "section": "2010: The year data sharing broke in neuroimaging",
+    "text": "2010: The year data sharing broke in neuroimaging\n \n\n“Comprehensive mapping of the functional connectome, and its subsequent exploitation to discern geneticinfluences and brain–behavior relationships, will require multicenter collaborative datasets. Here we initiate this endeavor by gathering R-fMRI data from 1,414 volunteers collected independently at 35 international centers. We demonstrate a universal architecture of positive and negative functional connections, as well as consistent loci of inter-individual variability. …”"
   },
   {
     "objectID": "talk.html#data-sharing-is-becoming-the-norm-in-neuroimaging",
@@ -77,25 +77,18 @@
     "text": "Creating meta-analytic maps\n\n\n\n\nAutomated Coordinate Extraction\n\nAutomatically extracts activation tables from fMRI papers for 17 journals\nCurrent database has 14,371 papers (with full text)\n84% sensitivity, 97% specificity against manual database (SumsDB)\n\nMeta-analytic maps created for each paper\n\n10mm sphere placed at each focus\n\n\n\n\n\n\n\n\nX\nY\nZ\n\n\n\n\n12\n57\n-6\n\n\n33\n21\n15\n\n\n24\n-6\n51\n\n\n28\n10\n18\n\n\n\n\n\n↓\n\n\n\n\n\nYarkoni et al, 2011, Nature Methods"
   },
   {
-    "objectID": "talk.html#section-2",
-    "href": "talk.html#section-2",
+    "objectID": "talk.html#example-of-neurosynth-usage",
+    "href": "talk.html#example-of-neurosynth-usage",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "https://poldrack.github.io/talks-OpenScienceEcosystem/"
+    "section": "Example of Neurosynth usage",
+    "text": "Example of Neurosynth usage\n \n\n\n\n\n\n\nIdentified gradients of functional organization across the cortex\nUsed Neurosynth to identify the most common terms associated with each gradient"
   },
   {
-    "objectID": "talk.html#meta-analytic-decoding-using-neurosynth",
-    "href": "talk.html#meta-analytic-decoding-using-neurosynth",
+    "objectID": "talk.html#neurosynth-impact",
+    "href": "talk.html#neurosynth-impact",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Meta-analytic decoding using Neurosynth",
-    "text": "Meta-analytic decoding using Neurosynth\n\n\nGiven 2+ terms, can determine which is most likely given the data\nNaive Bayes classifier: assumes that all features (voxels) are independent; selects the most probable class\nCan apply this to any activation map—studies, individual subjects, etc.\n\n\n\n\nYarkoni et al, 2011, Nature Methods"
-  },
-  {
-    "objectID": "talk.html#section-3",
-    "href": "talk.html#section-3",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "Collections\n\nA set of images (such as all images from a particular paper) can be uploaded as a collection\nEach collection receives a persistent identifier"
+    "section": "Neurosynth impact",
+    "text": "Neurosynth impact"
   },
   {
     "objectID": "talk.html#neurovault-sharing-neuroimaging-results",
@@ -105,11 +98,11 @@
     "text": "Neurovault: Sharing neuroimaging results\n\n\n\nThe results of most neuroimaging studies are images with statistical estimates at each voxel\nNeurovault.org is an open archive for these results\n\n\n\n\n\n\nGorgolewski et al., 2015, Frontiers in Neuroinformatics"
   },
   {
-    "objectID": "talk.html#openneuro-sharing-raw-and-processing-neuroimaging-data",
-    "href": "talk.html#openneuro-sharing-raw-and-processing-neuroimaging-data",
+    "objectID": "talk.html#section-3",
+    "href": "talk.html#section-3",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "OpenNeuro: Sharing raw and processing neuroimaging data",
-    "text": "OpenNeuro: Sharing raw and processing neuroimaging data\n\n\n\nhttps://poldrack.github.io/talks-OpenScienceEcosystem/"
+    "section": "",
+    "text": "Collections\n\nA set of images (such as all images from a particular paper) can be uploaded as a collection\nEach collection receives a persistent identifier"
   },
   {
     "objectID": "talk.html#section-4",
@@ -119,11 +112,11 @@
     "text": "Image browser\n\nIndividual images can be browsed and downloaded\nA number of analysis tools can also be applied\nEach image also receives a persistent identifier"
   },
   {
-    "objectID": "talk.html#section-5",
-    "href": "talk.html#section-5",
+    "objectID": "talk.html#example-of-neurovault-usage",
+    "href": "talk.html#example-of-neurovault-usage",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "Image browser\n\nIndividual images can be browsed and downloaded\nA number of analysis tools can also be applied\nEach image also receives a persistent identifier"
+    "section": "Example of Neurovault usage",
+    "text": "Example of Neurovault usage"
   },
   {
     "objectID": "talk.html#section-6",
@@ -131,13 +124,6 @@
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
     "text": "Simply sharing data is not sufficient\nIt must be shared in a way that makes it useful!"
-  },
-  {
-    "objectID": "talk.html#section-7",
-    "href": "talk.html#section-7",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "A BRAIN Initiative archive for neuroimaging data\nSupports sharing of any validated BIDS dataset"
   },
   {
     "objectID": "talk.html#its-easy-to-share-data-badly",
@@ -175,13 +161,6 @@
     "text": "From DICOM to BIDS"
   },
   {
-    "objectID": "talk.html#bids-extensions",
-    "href": "talk.html#bids-extensions",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "BIDS Extensions",
-    "text": "BIDS Extensions\n\n\n\n\nBIDS was originally focused on structural/functional MRI data\nBIDS extension process allows extension of the standard through BIDS Extension Proposals (BEPS) initiated by the community\n\nPatterned after the Python Enhancement Proposal (PEP) process\n\n\n\n\n\n11 Completed BEPs:\n\n\n\n\nBEP #\nTitle\n\n\n\n\nBEP001\nQuantitative MRI (qMRI)\n\n\nBEP003\nCommon Derivatives\n\n\nBEP005\nArterial Spin Labeling (ASL)\n\n\nBEP006\nElectroencephalography (EEG)\n\n\nBEP007\nHierarchical Event Descriptor (HED) Tags\n\n\nBEP008\nMagnetoencephalography (MEG)\n\n\nBEP009\nPositron Emission Tomography (PET)\n\n\nBEP010\nintracranial Electroencephalography (iEEG)\n\n\nBEP018\nGenetic information\n\n\nBEP030\nNear Infrared Spectroscopy (NIRS)\n\n\nBEP031\nMicroscopy"
-  },
-  {
     "objectID": "talk.html#the-importance-of-automated-validation",
     "href": "talk.html#the-importance-of-automated-validation",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
@@ -189,11 +168,11 @@
     "text": "The importance of automated validation\n\nhttps://bids-standard.github.io/bids-validator/"
   },
   {
-    "objectID": "talk.html#the-impact-of-bids-an-example",
-    "href": "talk.html#the-impact-of-bids-an-example",
+    "objectID": "talk.html#bids-extensions",
+    "href": "talk.html#bids-extensions",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "The impact of BIDS: An example",
-    "text": "The impact of BIDS: An example\n\n\n\n\nMRIQC Web API\n\nCrowdsourced database of MR QC metrics\nQC metrics from ~375K unique BOLD scans and ~280K T1w scans as of June 2022\nPublicly available: https://mriqc.nimh.nih.gov/\n\n\n\n\n\n\n\n\n\n\nhttps://poldrack.github.io/talks-OpenScienceEcosystem/"
+    "section": "BIDS Extensions",
+    "text": "BIDS Extensions\n\n\n\n\nBIDS was originally focused on structural/functional MRI data\nBIDS extension process allows extension of the standard through BIDS Extension Proposals (BEPS) initiated by the community\n\nPatterned after the Python Enhancement Proposal (PEP) process\n\n\n\n\n\n11 Completed BEPs:\n\n\n\n\nBEP #\nTitle\n\n\n\n\nBEP001\nQuantitative MRI (qMRI)\n\n\nBEP003\nCommon Derivatives\n\n\nBEP005\nArterial Spin Labeling (ASL)\n\n\nBEP006\nElectroencephalography (EEG)\n\n\nBEP007\nHierarchical Event Descriptor (HED) Tags\n\n\nBEP008\nMagnetoencephalography (MEG)\n\n\nBEP009\nPositron Emission Tomography (PET)\n\n\nBEP010\nintracranial Electroencephalography (iEEG)\n\n\nBEP018\nGenetic information\n\n\nBEP030\nNear Infrared Spectroscopy (NIRS)\n\n\nBEP031\nMicroscopy"
   },
   {
     "objectID": "talk.html#the-growing-usage-of-bids-an-example",
@@ -203,32 +182,18 @@
     "text": "The growing usage of BIDS: An example\n\n\n\n\nMRIQC Web API\n\nCrowdsourced database of MR QC metrics\nQC metrics from ~375K unique BOLD scans and ~280K T1w scans as of June 2022\nPublicly available: https://mriqc.nimh.nih.gov/"
   },
   {
-    "objectID": "talk.html#the-growth-of-openneuro",
-    "href": "talk.html#the-growth-of-openneuro",
+    "objectID": "talk.html#bids-enables-a-growing-open-source-software-ecosystem",
+    "href": "talk.html#bids-enables-a-growing-open-source-software-ecosystem",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "The growth of OpenNeuro",
-    "text": "The growth of OpenNeuro"
+    "section": "BIDS enables a growing open-source software ecosystem",
+    "text": "BIDS enables a growing open-source software ecosystem"
   },
   {
-    "objectID": "talk.html#section-8",
-    "href": "talk.html#section-8",
+    "objectID": "talk.html#section-7",
+    "href": "talk.html#section-7",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
     "text": "A BRAIN Initiative archive for neuroimaging data\nSupports sharing of any validated BIDS dataset"
-  },
-  {
-    "objectID": "talk.html#the-diversity-of-openneuro-datasets",
-    "href": "talk.html#the-diversity-of-openneuro-datasets",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "The diversity of OpenNeuro datasets",
-    "text": "The diversity of OpenNeuro datasets\n\n\n\n\n\n\n\nDatatype\n#\n\n\n\n\nmri - anat\n597\n\n\nmri - func\n521\n\n\neeg\n120\n\n\nmri - dwi\n67\n\n\nmeg\n30\n\n\nieeg\n17\n\n\nbeh\n13\n\n\npet\n11\n\n\n\n\n\n\n\nSpecies\n#\n\n\n\n\nHuman\n676\n\n\nMouse\n20\n\n\nRat\n12\n\n\nNHP\n2\n\n\nphantoms\n1\n\n\nJuvenile pigs\n1\n\n\nHuman, Mouse\n1\n\n\nDog\n1\n\n\nMonkey\n1\n\n\nSheep\n1\n\n\n\n\n\n\nupdated from Markiewicz et al, 2021, eLife"
-  },
-  {
-    "objectID": "talk.html#section-17",
-    "href": "talk.html#section-17",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "https://poldrack.github.io/talks-OpenScienceEcosystem/"
   },
   {
     "objectID": "talk.html#section-9",
@@ -245,18 +210,18 @@
     "text": "Any valid BIDS dataset can be shared via OpenNeuro"
   },
   {
-    "objectID": "talk.html#section-11",
-    "href": "talk.html#section-11",
+    "objectID": "talk.html#the-growth-of-openneuro",
+    "href": "talk.html#the-growth-of-openneuro",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "Any valid BIDS dataset can be shared via OpenNeuro"
+    "section": "The growth of OpenNeuro",
+    "text": "The growth of OpenNeuro"
   },
   {
-    "objectID": "talk.html#section-20",
-    "href": "talk.html#section-20",
+    "objectID": "talk.html#the-diversity-of-openneuro-datasets",
+    "href": "talk.html#the-diversity-of-openneuro-datasets",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "The Poldrack Lab\n\n\n\n\n\nFunding\n\n   \n\n\nOpenNeuro Team\n\n      \n\nCollaborators"
+    "section": "The diversity of OpenNeuro datasets",
+    "text": "The diversity of OpenNeuro datasets\n\n\n\n\n\n\n\nDatatype\n#\n\n\n\n\nmri - anat\n597\n\n\nmri - func\n521\n\n\neeg\n120\n\n\nmri - dwi\n67\n\n\nmeg\n30\n\n\nieeg\n17\n\n\nbeh\n13\n\n\npet\n11\n\n\n\n\n\n\n\nSpecies\n#\n\n\n\n\nHuman\n676\n\n\nMouse\n20\n\n\nRat\n12\n\n\nNHP\n2\n\n\nphantoms\n1\n\n\nJuvenile pigs\n1\n\n\nHuman, Mouse\n1\n\n\nDog\n1\n\n\nMonkey\n1\n\n\nSheep\n1\n\n\n\n\n\n\nupdated from Markiewicz et al, 2021, eLife"
   },
   {
     "objectID": "talk.html#scholarly-reuse-of-openneuro-datasets",
@@ -264,6 +229,13 @@
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "Scholarly reuse of OpenNeuro datasets",
     "text": "Scholarly reuse of OpenNeuro datasets\n\n\nMarkiewicz et al, 2021, eLife"
+  },
+  {
+    "objectID": "talk.html#example-of-openneuro-reuse",
+    "href": "talk.html#example-of-openneuro-reuse",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "Example of OpenNeuro reuse",
+    "text": "Example of OpenNeuro reuse\n\n\n\nA challenge for decoding brain activity from fMRI data is that most datasets are very small\nWe used OpenNeuro to train a “foundation model”\n\nA pre-trained model that can be used as a starting point for decoding models on smaller datasets\n\nWe pre-train models on broad fMRI data from OpenNeuro: 11,980 experimental runs from 1,726 individuals across 34 datasets.\n\n\n\n\nThis approach substantially increased decoding performance vs. a baseline model\n\n\n\n\nThomas, Ré, & Poldrack, 2022, NeurIPS"
   },
   {
     "objectID": "talk.html#challenges-to-open-sharing",
@@ -305,35 +277,21 @@
     "href": "talk.html#conclusions",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "Conclusions",
-    "text": "Conclusions\n\n\nThe field of neuroimaging has built an enviable ecosystem for open science\nInfrastructure is critical to ease friction\nCommunity engagement has been key to adoption\nNeed to keep the tools as close as possible to current practice"
+    "text": "Conclusions\n\n\nThe field of neuroimaging has built an model ecosystem for open science and data sharing\nInfrastructure is critical to ease friction\nCommunity engagement has been key to adoption\nNeed to keep the tools as close as possible to current practice"
   },
   {
-    "objectID": "talk.html#section-21",
-    "href": "talk.html#section-21",
+    "objectID": "talk.html#section-20",
+    "href": "talk.html#section-20",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
-    "text": "The Poldrack Lab\n\n\n\n\n\nFunding\n\n   \n\n\nOpenNeuro Team\n\n      \n\nCollaborators\n\n   \n\n\n\n\nhttps://poldrack.github.io/talks-OpenScienceEcosystem/"
+    "text": "The Poldrack Lab\n\n\n\n\n\nFunding\n\n   \n\n\nOpenNeuro Team\n\n      \n\nCollaborators"
   },
   {
-    "objectID": "talk.html#the-year-data-sharing-broke-in-neuroimaging",
-    "href": "talk.html#the-year-data-sharing-broke-in-neuroimaging",
+    "objectID": "talk.html#meta-analytic-decoding-using-neurosynth",
+    "href": "talk.html#meta-analytic-decoding-using-neurosynth",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "2010: The year data sharing broke in neuroimaging",
-    "text": "2010: The year data sharing broke in neuroimaging\n \n\n“Comprehensive mapping of the functional connectome, and its subsequent exploitation to discern geneticinfluences and brain–behavior relationships, will require multicenter collaborative datasets. Here we initiate this endeavor by gathering R-fMRI data from 1,414 volunteers collected independently at 35 international centers. We demonstrate a universal architecture of positive and negative functional connections, as well as consistent loci of inter-individual variability. …”"
-  },
-  {
-    "objectID": "talk.html#example-of-neurosynth-usage",
-    "href": "talk.html#example-of-neurosynth-usage",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Example of Neurosynth usage",
-    "text": "Example of Neurosynth usage\n \n\n\n\n\n\n\nIdentified gradients of functional organization across the cortex\nUsed Neurosynth to identify the most common terms associated with each gradient"
-  },
-  {
-    "objectID": "talk.html#neurosynth-impact",
-    "href": "talk.html#neurosynth-impact",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Neurosynth impact",
-    "text": "Neurosynth impact"
+    "section": "Meta-analytic decoding using Neurosynth",
+    "text": "Meta-analytic decoding using Neurosynth\n\n\nGiven 2+ terms, can determine which is most likely given the data\nNaive Bayes classifier: assumes that all features (voxels) are independent; selects the most probable class\nCan apply this to any activation map—studies, individual subjects, etc.\n\n\n\n\nYarkoni et al, 2011, Nature Methods"
   },
   {
     "objectID": "talk.html#section-23",
@@ -341,26 +299,5 @@
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
     "text": "Cross-validated classification of all studies in database\nSelect 25 high-frequency terms\nPairwise classification: how well can we distinguish between the presence of each pair of terms?\n\n\n\n\n\n\nYarkoni et al, 2011, Nature Methods\n\n\n\nhttps://poldrack.github.io/talks-OpenScienceEcosystem/"
-  },
-  {
-    "objectID": "talk.html#example-of-neurovault-usage",
-    "href": "talk.html#example-of-neurovault-usage",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Example of Neurovault usage",
-    "text": "Example of Neurovault usage"
-  },
-  {
-    "objectID": "talk.html#bids-enables-a-growing-open-source-software-ecosystem",
-    "href": "talk.html#bids-enables-a-growing-open-source-software-ecosystem",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "BIDS enables a growing open-source software ecosystem",
-    "text": "BIDS enables a growing open-source software ecosystem"
-  },
-  {
-    "objectID": "talk.html#example-of-openneuro-reuse",
-    "href": "talk.html#example-of-openneuro-reuse",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Example of OpenNeuro reuse",
-    "text": "Example of OpenNeuro reuse\n\n\n\nA challenge for decoding brain activity from fMRI data is that most datasets are very small\nWe used OpenNeuro to train a “foundation model”\n\nA pre-trained model that can be used as a starting point for decoding models on smaller datasets\n\nWe pre-train models on broad fMRI data from OpenNeuro: 11,980 experimental runs from 1,726 individuals across 34 datasets.\n\n\n\n\nThis approach substantially increased decoding performance vs. a baseline model\n\n\n\n\nThomas, Ré, & Poldrack, 2022, NeurIPS"
   }
 ]
