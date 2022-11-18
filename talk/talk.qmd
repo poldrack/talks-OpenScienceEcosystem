@@ -15,6 +15,733 @@ format:
     theme: [default, rp-theme.scss]
     height: 1080
     width: 1920
+    margin: 0.05
 ---
 
-## Template slide
+##
+
+<div style="text-align: center;font-size: 2.5em;fig-align: center">
+Transparency is essential for reproducibility
+</div>
+
+
+![](./images/turingway_reproduducibilty.png){.absolute top="35%" left="15%" height="60%"}
+
+
+:::{.absolute top="99%" left="30%" height="80%"}
+<div style='font-size: 0.5em'>https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html</div>
+:::
+
+##
+
+::::{.columns}
+::: {.column width="60%"}
+<div style="text-align: center;font-size: 1.4em;">
+"we can distill Claerbout's insight into a slogan:
+
+An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures.."  
+
+- Buckheit & Donoho, 1995 
+</div>
+:::
+::: {.column width="40%"}
+<div style="text-align: center;fig-align: center; font-size: 1.5em;">
+![](./images/claerbout.png)
+
+- Jon Claerbout
+</div>
+:::
+::::
+
+## Why neuroimaging is a best-case scenario for open science
+::::{.columns}
+:::{.column width="50%"}
+<div style="font-size: 1.25em;">
+- Magnetic resonance imaging (MRI) is the primary tool for studying human brain structure and function
+- MRI data are digital end-to-end
+    - From MRI scanner to automated analysis
+    - Usually zero/few manual analysis steps
+- The field has largely converged on:
+  - a standardized image format (NiFTI)
+  - a ~common spatial coordinate system
+</div>
+:::
+:::{.column width="50%"}
+![](./images/OpenEcosystem_Feb20225.png){.absolute height=80%}
+
+:::
+::::
+
+## A false start for fMRI data sharing
+
+
+![](./images/OpenEcosystem_Feb202213.png)
+
+
+
+## A false start for fMRI data sharing
+:::: {.columns}
+
+::: {.column width="50%"}
+![](./images/OpenEcosystem_Feb202215.png){.absolute top=10% left=0, height=30%}
+
+![](./images/OpenEcosystem_Feb202216.png){.absolute top=50% left=0, height=20%}
+:::
+
+::: {.column width="50%"}
+This letter comes from a group of scientists who are publishing papers using fMRI to understand the links between brain and behavior\. We are writing in reaction the recent announcement of the creation of the National fMRI Data Center \(www\.fmridc\.org\)\. In the letter announcing the creation of the center\, it was also implied that leading journals in our field may require authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center\.
+…
+We are particularly concerned with any journal's decision to require all authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center\.
+:::
+
+::::
+
+
+## 2010: The year data sharing broke in neuroimaging
+
+![](./images/biswal_title.png)
+![](./images/biswal_date.png)
+
+- "Comprehensive mapping of the functional connectome, and its subsequent exploitation to discern geneticinfluences and brain–behavior relationships, will require multicenter collaborative datasets. Here we initiate this endeavor by gathering R-fMRI data from 1,414 volunteers collected independently at 35 international centers. We demonstrate a universal architecture of positive and negative functional connections, as well as consistent loci of inter-individual variability. ..."
+
+
+## Data sharing is becoming the norm in neuroimaging
+:::: {.columns}
+
+::: {.column width="60%"}
+![](images/OpenEcosystem_Feb202217.png){.relative height=50%}
+<div style='font-size: 0.7em'>
+Poldrack et al., *Annual Reviews in Biomedical Data Science*, 2019
+</div>
+:::
+
+::: {.column width="40%"}
+![](images/milham_opendatapubs.png){.relative height=50%}
+<div style='font-size: 0.7em' >
+Milham et al., *Nature Communications*, 2018
+</div>
+:::
+::::
+
+::: {.absolute top=80% left=0}
+<div style='font-size: 1.2em' >
+Anonymous senior researcher:
+
+“OHBM has been taken over by the open science zealots\!”
+</div>
+:::
+
+## An open ecosystem for retrospective data sharing
+
+:::: {.columns}
+::: {.column width="70%"}
+![](images/ecosystem_fig.png)
+:::
+::: {.column width="30%"}
+- Neurosynth.org: Open database of published neuroimaging coordinates
+- Neurovault.org: Open archive for neuroimaging results
+- OpenNeuro.org: Open archive for raw/processed neuroimaging data
+:::
+::::
+
+## Maximally open sharing
+:::: {.columns}
+::: {.column width="60%"}
+<div style="font-size: 1.25em;">
+- Data shared under maximally permissive data use agreements:
+  - Neurosynth: Open Data Commons Open Database License v1.0
+  - Neurovault: CC0
+  - OpenNeuro: CC0
+- All data available programmatically via web API as well as web page
+</div>
+:::
+::: {.column width="40%"}
+![](./images/CC0.png)
+
+- CC0 enables scientists, educators, artists and other creators and owners of copyright- or database-protected content to waive those interests in their works and thereby place them as completely as possible in the public domain, so that others may freely build upon, enhance and reuse the works for any purposes without restriction under copyright or database law.
+  - https://creativecommons.org/share-your-work/public-domain/cc0/
+:::
+::::
+
+## Neurosynth: Sharing activation coordinates
+
+- Brain activity is reported in a (somewhat) standardized coordinate system
+
+![](./images/mnicoords.png)
+
+![](./images/brain_xyz.png){.absolute top=0 left=80% height=25%}
+
+
+## Creating meta-analytic maps
+
+:::: {.columns}
+::: {.column width="50%"}
+<div style="font-size: 1.2em;">
+- Automated Coordinate Extraction
+  - Automatically extracts activation tables from fMRI papers for 17 journals
+  - Current database has 14,371 papers (with full text)
+  - 84% sensitivity, 97% specificity against manual database (SumsDB)
+- Meta-analytic maps created for each paper
+  - 10mm sphere placed at each focus
+</div>
+:::
+::: {.column width="50%"}
+<div style="font-size: 1.1em;">
+| X  | Y  | Z  |
+|----|----|----|
+| 12 | 57 | -6 |
+| 33 | 21 | 15 | 
+| 24 | -6 | 51 |
+| 28 | 10 | 18 | 
+</div>
+<div style='font-size: 4em; text-align:center;' >
+↓
+</div>
+![](./images/neurosynth_spheres.png){.absolute height=30% left=65%}
+:::
+
+::::
+
+::: {.absolute top=90% left=0}
+Yarkoni et al, 2011, *Nature Methods*
+:::
+
+## 
+
+![](./images/neurosynth_wm.png){.absolute top=0 left=15% height=90%}
+
+
+
+## Example of Neurosynth usage
+
+![](./images/margulies_title.png)
+![](./images/margulies_date.png)
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./images/margulies_fig4.png)
+:::
+::: {.column width="50%"}
+<div style="font-size: 1.2em;">
+- Identified gradients of functional organization across the cortex
+- Used Neurosynth to identify the most common terms associated with each gradient
+</div>
+:::
+::::
+
+## Neurosynth impact
+
+
+
+## Neurovault: Sharing neuroimaging results
+:::: {.columns}
+::: {.column width="25%"}
+- The results of most neuroimaging studies are images with statistical estimates at each voxel
+- Neurovault.org is an open archive for these results
+:::
+::: {.column width="75%"}
+![](./images/OpenEcosystem_Feb202219.png)
+:::
+::::
+
+::: {.absolute top=95% left=0}
+Gorgolewski et al., 2015, *Frontiers in Neuroinformatics*
+:::
+
+##
+:::: {.columns}
+::: {.column width="25%"}
+- **Collections**
+  - A set of images (such as all images from a particular paper) can be uploaded as a collection
+  - Each collection receives a persistent identifier
+:::
+::: {.column width="75%"}
+
+![](./images/neurovault_collection.png)
+:::
+::::
+
+##
+:::: {.columns}
+::: {.column width="40%"}
+- **Image browser**
+  - Individual images can be browsed and downloaded
+  - A number of analysis tools can also be applied
+  - Each image also receives a persistent identifier
+:::
+::: {.column width="60%"}
+
+![](./images/neurovault_browser.png){.absolute height=100%}
+:::
+::::
+
+## Example of Neurovault usage
+
+![](./images/menuet_title.png)
+
+![](./images/menuet_date.png)
+
+:::: {.columns}
+::: {.column width="60%"}
+![](./images/menuet_fig1.png)
+
+:::
+::: {.column width="40%"}
+![](./images/menuet_fig3.png)
+
+:::
+::::
+
+## 
+![](./images/openeuro_landing.png){.absolute top=0 left=10% height=100%}
+
+##
+
+<div style='font-size: 2em; text-align: center'>
+Simply sharing data is not sufficient
+
+It must be shared in a way that makes it useful!
+</div>
+
+## It's easy to share data badly
+:::: {.columns}
+::: {.column width="50%"}
+
+Data Sharing and Management Snafu in 3 Short Acts
+
+- <div style='font-size: 0.7em'>https://www.youtube.com/watch?v=N2zK3sAtr-4</div>
+
+![](./images/sharing_snafu.png){.absolute height=45%}
+
+
+:::
+::: {.column width="50%"}
+- I received the data, but when I opened it up it was in hexadecimal
+- Yes, that is right
+- I cannot read hexadecimal
+- You asked for my data and I gave it to you.  I have done what you asked.
+
+…
+
+- Is there a guide to the data anywhere?
+- Yes, of course, it is the article that is published in Science.
+:::
+::::
+
+## Brain Imaging Data Structure (BIDS)
+<div style='font-size: 1.2em'>
+- A community-based open standard for neuroimaging data
+  - A file organization standard
+  - A metadata standard
+</div>
+![](./images/bids_logo.png){.absolute top=40% left=0 height=30%}
+![](./images/bids_scidata.png){.absolute top=40% left=50% height=50%}
+
+## The development of BIDS
+<div style='font-size: 1.2em'>
+- January 2015
+  - Initial stakeholder meeting at Stanford (funded by INCF)
+  - Initiated development of a draft standard
+- September 2015
+  - Draft standard posted to BIDS web site with 22 example datasets
+  - Solicited feedback from community
+- June 2016
+  - Published paper
+- September 2018
+  - BIDS-standard Github organization started
+
+</div>
+
+## BIDS Principles
+<div style='font-size: 1.2em'>
+- Adoption is crucial
+  - Keep it as similar to existing practices as possible
+     - Don’t let technology override usability!
+  - Focus on engaging the community
+- Don’t reinvent the wheel
+  - Use existing standards when possible
+- 80/20 rule
+  - Focus on the most common use cases
+  - Don’t let the perfect be the enemy of the good!
+</div>
+
+## From DICOM to BIDS
+
+![](./images/dicom_to_bids.png)
+
+## The importance of automated validation
+
+
+![](./images/bids_validator.png)
+
+https://bids-standard.github.io/bids-validator/
+
+
+## BIDS Extensions
+
+:::: {.columns}
+::: {.column width="50%"}
+<div style='font-size: 1.2em'>
+- BIDS was originally focused on structural/functional MRI data
+- BIDS extension process allows extension of the standard through BIDS Extension Proposals (BEPS) initiated by the community
+  - Patterned after the Python Enhancement Proposal (PEP) process
+</div>
+:::
+::: {.column width="50%"}
+<div style='.centered'>**11 Completed BEPs:**</div>
+
+| BEP #  | Title                                      |
+|--------|--------------------------------------------|
+| BEP001 | Quantitative MRI (qMRI)                    |
+| BEP003 | Common Derivatives                         |
+| BEP005 | Arterial Spin Labeling (ASL)               |
+| BEP006 | Electroencephalography (EEG)               |
+| BEP007 | Hierarchical Event Descriptor (HED) Tags   |
+| BEP008 | Magnetoencephalography (MEG)               |
+| BEP009 | Positron Emission Tomography (PET)         |
+| BEP010 | intracranial Electroencephalography (iEEG) |
+| BEP018 | Genetic information                        |
+| BEP030 | Near Infrared Spectroscopy (NIRS)          |
+| BEP031 | Microscopy                                 |
+:::
+::::
+
+## The growing usage of BIDS: An example
+
+:::: {.columns}
+::: {.column width="50%"}
+<div style='font-size: 1.2em'>
+- MRIQC Web API
+  - Crowdsourced database of MR QC metrics
+  - QC metrics from ~375K unique BOLD scans and ~280K T1w scans as of June 2022
+  - Publicly available:
+https://mriqc.nimh.nih.gov/
+</div>
+:::
+::: {.column width="50%"}
+![](./images/mriqc_webapi_title.png)
+
+![](./images/mriqc_api_growth.png)
+
+:::
+::::
+
+## BIDS enables a growing open-source software ecosystem
+
+![](https://www.nipreps.org/assets/nipreps-chart.png){.absolute top=10% left=15% height=140%}
+
+
+##
+:::: {.columns}
+::: {.column width="70%"}
+![](./images/openneuro_walk_1.png)
+:::
+::: {.column width="30%"}
+<div style='font-size: 1.2em'>
+- A BRAIN Initiative archive for neuroimaging data
+- Supports sharing of any validated BIDS dataset
+</div>
+
+:::
+::::
+
+##
+
+![](./images/openneuro_walk_2.png)
+
+##
+
+![](./images/openneuro_walk_3.png)
+
+:::{.absolute top=30% left=75%}
+<div style='font-size: 1.2em'>
+Each shared dataset is versioned and receives a persistent identifier (DOI)
+</div>
+:::
+##
+
+<div style="text-align: center;font-size: 2.5em;fig-align: center">
+Any valid BIDS dataset can be shared via OpenNeuro</div>
+
+##
+
+![](./images/openneuro_upload_1.png)
+
+##
+
+![](./images/openneuro_upload_2.png)
+
+##
+
+![](./images/openneuro_upload_3.png)
+
+##
+
+![](./images/openneuro_upload_4.png)
+
+##
+
+![](./images/openneuro_upload_5.png)
+
+##
+
+![](./images/openneuro_upload_6.png)
+
+##
+
+![](./images/openneuro_upload_7.png)
+
+##
+
+![](./images/openneuro_upload_8.png)
+
+##
+
+![](./images/openneuro_upload_9.png)
+
+
+## The growth of OpenNeuro
+
+![](./images/combined_growth.png)
+
+
+## The diversity of OpenNeuro datasets
+
+:::: {.columns}
+::: {.column width="50%"}
+![](./images/dataset_size.png)
+:::
+
+::: {.column width="25%"}
+| **Datatype**            | *#* |
+|:------------|----:|
+| mri - anat  | 597 |
+| mri - func  | 521 |
+| eeg         | 120 |
+| mri - dwi   |  67 |
+| meg         |  30 |
+| ieeg        |  17 |
+| beh         |  13 |
+| pet         |  11 |
+
+:::
+::: {.column width="25%"}
+|  **Species**             |  *#*  |
+|:--------------|----------:|
+| Human         |       676 |
+| Mouse         |        20 |
+| Rat           |        12 |
+| NHP           |         2 |
+| phantoms      |         1 |
+| Juvenile pigs |         1 |
+| Human, Mouse  |         1 |
+| Dog           |         1 |
+| Monkey        |         1 |
+| Sheep         |         1 |
+:::
+::::
+
+::: {.absolute top=95% left=0}
+updated from Markiewicz et al, 2021, *eLife*
+:::
+
+## Scholarly reuse of OpenNeuro datasets
+
+![](images/openneuro_reuse.png)
+
+::: {.absolute top=95% left=0}
+Markiewicz et al, 2021, *eLife*
+:::
+
+## Example of OpenNeuro reuse
+
+:::: {.columns}
+::: {.column width="40%"}
+- A challenge for decoding brain activity from fMRI data is that most datasets are very small
+- We used OpenNeuro to train a "foundation model"
+  - A pre-trained model that can be used as a starting point for decoding models on smaller datasets
+- We pre-train models on broad fMRI data from OpenNeuro: 11,980 experimental runs from 1,726 individuals across 34 datasets.
+
+:::
+::: {.column width="60%"}
+![](./images/thomas_results.png)
+
+- This approach substantially increased decoding performance vs. a baseline model
+
+:::
+::::
+
+::: {.absolute top=95% left=0}
+Thomas, Ré, & Poldrack, 2022, *NeurIPS*
+:::
+
+## Challenges to open sharing
+
+:::: {.columns}
+::: {.column width="50%"}
+
+- All OpenNeuro MRI datasets must be *defaced*
+  - To reduce risk of reidentification
+- There is increasing risk that subjects might be reidentified even after defacing using advanced face recognition systems + face imputation tools (Schwartz et al., 2021)
+- If the risk continues to rise, it may become necessary to move away from open sharing
+  - This would be a huge loss for researchers, research participants, and the world
+- We have proposed regulatory changes to protect subjects from misuse of neuroscience information in the US context (Jwa & Poldrack, 2022, *J. Law & Biosciences*)
+:::
+::: {.column width="50%"}
+
+![](./images/defacing.png)
+
+:::
+::::
+
+## Keys to success in neuroimaging data sharing
+
+<div style='font-size: 1.2em'>
+- Data are digital end-to-end
+  - Minimizes manual steps in the process
+- Standardized file formats and data standards
+  - Makes data immediately usable by anyone
+  - Reduces burden of curation and preparation
+- Demonstrated scientific utility
+- Numerous success stories
+</div>
+
+## Lessons learned
+
+<div style='font-size: 1.2em'>
+- Community buy-in is essential
+  - Mandates put in place before the community is ready can backfire
+    - Unless they have overwhelmingly powerful advocates, as in genomics
+  - Important that sharing advocates are members of community and eat their own dog food
+</div>
+
+## Lessons learned
+
+:::: {.columns}
+::: {.column width="50%"}
+<div style='font-size: 1.2em'>
+- Keep it simple and as close to standard practice as possible
+  - Overengineered solutions have generally failed
+  - If there are more than 2 acronyms…
+</div>
+
+:::
+::: {.column width="50%"}
+
+![](./images/birn.png)
+
+:::
+::::
+
+
+## Lessons learned
+
+:::: {.columns}
+::: {.column width="50%"}
+<div style='font-size: 1.2em'>
+- Don’t let the perfect be the enemy of the good
+  - 20% of the effort will cover 80% of the datasets - focus on these!
+  - There is a long tail of edge cases with loud advocates
+
+</div>
+
+:::
+::: {.column width="30%"}
+<div style=' display: flex; justify-content: center;'>
+![](./images/pareto.png)
+</div>
+
+<div style='text-align: center;font-size: 1.2em;fig-align: center'>
+Vilfredo Pareto
+</div>
+
+:::
+::::
+
+## Conclusions
+<div style='font-size: 1.3em'>
+- The field of neuroimaging has built an enviable ecosystem for open science
+- Infrastructure is critical to ease friction
+- Community engagement has been key to adoption
+- Need to keep the tools as close as possible to current practice
+</div>
+
+##
+
+:::: {.columns}
+::: {.column width="50%"}
+<div style='text-align: center;font-size: 1.4em;fig-align: center'>
+The Poldrack Lab
+</div>
+<div style="display: flex; justify-content: center;">
+![](./images/poldracklab_2022.png){height="400px"}
+</div>
+
+<div style='text-align: center;font-size: 1.4em;fig-align: center'>
+Funding
+</div>
+![](./images/brain_initiative_logo.png){height="200px"}
+![](./images/nsf_logo.png){height="200px"}
+![](./images/ljaf.png){height="200px"}
+![](./images/NIH-NIMH-logo-new.png){height="200px"}
+
+
+:::
+::: {.column width="50%"}
+
+<div style='text-align: center;font-size: 1.4em;fig-align: center'>
+OpenNeuro Team
+</div>
+
+![](./images/chris_g.png){height="200px"}
+![](./images/nell.png){height="200px"}
+![](./images/chris_m.png){height="200px"}
+![](./images/ross.png){height="200px"}
+![](./images/annie.png){height="200px"}
+![](./images/mathias.png){height="200px"}
+![](./images/oscar.png){height="200px"}
+
+<div style='text-align: center;font-size: 1.4em;fig-align: center'>
+Collaborators
+</div>
+![](./images/yarick.png){height="200px"}
+![](./images/tal.png){height="200px"}
+![](./images/satra.png){height="200px"}
+![](./images/adam.jpg){height="200px"}
+:::
+::::
+
+##
+
+##
+
+
+## Meta-analytic decoding using Neurosynth
+<div style="font-size: 1.2em;">
+- Given 2+ terms, can determine which is most likely given the data
+- Naive Bayes classifier: assumes that all features (voxels) are independent; selects the most probable class
+- Can apply this to any activation map—studies, individual subjects, etc.
+</div>
+
+![](./images/neurosynth_classification.png)
+
+::: {.absolute top=90% left=0}
+Yarkoni et al, 2011, *Nature Methods*
+:::
+
+## 
+
+:::: {.columns}
+::: {.column width="25%"}
+- Cross-validated classification of all studies in database
+- Select 25 high-frequency terms
+- Pairwise classification: how well can we distinguish between the presence of each pair of terms?
+:::
+::: {.column width="75%"}
+![](./images/neurosynth_pairwise.png){.absolute height=100%}
+:::
+::::
+
+::: {.absolute top=98% left=0}
+Yarkoni et al, 2011, *Nature Methods*
+:::

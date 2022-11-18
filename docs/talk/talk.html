@@ -340,8 +340,884 @@ Russ Poldrack
 </div>
 
 </section>
-<section id="template-slide" class="slide level2">
-<h2>Template slide</h2>
+<section id="section" class="slide level2">
+<h2></h2>
+<div style="text-align: center;font-size: 2.5em;fig-align: center">
+<p>Transparency is essential for reproducibility</p>
+</div>
+<p><img data-src="./images/turingway_reproduducibilty.png" class="absolute" style="top: 35%; left: 15%; height: 60%; "></p>
+<div class="absolute" style="top: 99%; left: 30%; height: 80%; ">
+<div style="font-size: 0.5em">
+https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html
+</div>
+</div>
+</section>
+<section id="section-1" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div style="text-align: center;font-size: 1.4em;">
+<p>“we can distill Claerbout’s insight into a slogan:</p>
+<p>An article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures..”</p>
+<ul>
+<li>Buckheit &amp; Donoho, 1995</li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<div style="text-align: center;fig-align: center; font-size: 1.5em;">
+<p><img data-src="./images/claerbout.png"></p>
+<ul>
+<li>Jon Claerbout</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="why-neuroimaging-is-a-best-case-scenario-for-open-science" class="slide level2">
+<h2>Why neuroimaging is a best-case scenario for open science</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 1.25em;">
+<ul>
+<li>Magnetic resonance imaging (MRI) is the primary tool for studying human brain structure and function</li>
+<li>MRI data are digital end-to-end
+<ul>
+<li>From MRI scanner to automated analysis</li>
+<li>Usually zero/few manual analysis steps</li>
+</ul></li>
+<li>The field has largely converged on:
+<ul>
+<li>a standardized image format (NiFTI)</li>
+<li>a ~common spatial coordinate system</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./images/OpenEcosystem_Feb20225.png" class="absolute" style="height: 80%; "></p>
+</div>
+</div>
+</section>
+<section id="a-false-start-for-fmri-data-sharing" class="slide level2">
+<h2>A false start for fMRI data sharing</h2>
+
+<img data-src="./images/OpenEcosystem_Feb202213.png" class="r-stretch"></section>
+<section id="a-false-start-for-fmri-data-sharing-1" class="slide level2">
+<h2>A false start for fMRI data sharing</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./images/OpenEcosystem_Feb202215.png" class="absolute" style="top: 10%; left: 0,; height: 30%; "></p>
+<p><img data-src="./images/OpenEcosystem_Feb202216.png" class="absolute" style="top: 50%; left: 0,; height: 20%; "></p>
+</div><div class="column" style="width:50%;">
+<p>This letter comes from a group of scientists who are publishing papers using fMRI to understand the links between brain and behavior. We are writing in reaction the recent announcement of the creation of the National fMRI Data Center (www.fmridc.org). In the letter announcing the creation of the center, it was also implied that leading journals in our field may require authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center. … We are particularly concerned with any journal’s decision to require all authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center.</p>
+</div>
+</div>
+</section>
+<section id="the-year-data-sharing-broke-in-neuroimaging" class="slide level2">
+<h2>2010: The year data sharing broke in neuroimaging</h2>
+<p><img data-src="./images/biswal_title.png"> <img data-src="./images/biswal_date.png"></p>
+<ul>
+<li>“Comprehensive mapping of the functional connectome, and its subsequent exploitation to discern geneticinfluences and brain–behavior relationships, will require multicenter collaborative datasets. Here we initiate this endeavor by gathering R-fMRI data from 1,414 volunteers collected independently at 35 international centers. We demonstrate a universal architecture of positive and negative functional connections, as well as consistent loci of inter-individual variability. …”</li>
+</ul>
+</section>
+<section id="data-sharing-is-becoming-the-norm-in-neuroimaging" class="slide level2">
+<h2>Data sharing is becoming the norm in neuroimaging</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<img data-src="images/OpenEcosystem_Feb202217.png" class="relative" style="height:50.0%">
+<div style="font-size: 0.7em">
+<p>Poldrack et al., <em>Annual Reviews in Biomedical Data Science</em>, 2019</p>
+</div>
+</div><div class="column" style="width:40%;">
+<img data-src="images/milham_opendatapubs.png" class="relative" style="height:50.0%">
+<div style="font-size: 0.7em">
+<p>Milham et al., <em>Nature Communications</em>, 2018</p>
+</div>
+</div>
+</div>
+<div class="absolute" style="top: 80%; left: 0px; ">
+<div style="font-size: 1.2em">
+<p>Anonymous senior researcher:</p>
+<p>“OHBM has been taken over by the open science zealots!”</p>
+</div>
+</div>
+</section>
+<section id="an-open-ecosystem-for-retrospective-data-sharing" class="slide level2">
+<h2>An open ecosystem for retrospective data sharing</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="images/ecosystem_fig.png"></p>
+</div><div class="column" style="width:30%;">
+<ul>
+<li>Neurosynth.org: Open database of published neuroimaging coordinates</li>
+<li>Neurovault.org: Open archive for neuroimaging results</li>
+<li>OpenNeuro.org: Open archive for raw/processed neuroimaging data</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="maximally-open-sharing" class="slide level2">
+<h2>Maximally open sharing</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div style="font-size: 1.25em;">
+<ul>
+<li>Data shared under maximally permissive data use agreements:
+<ul>
+<li>Neurosynth: Open Data Commons Open Database License v1.0</li>
+<li>Neurovault: CC0</li>
+<li>OpenNeuro: CC0</li>
+</ul></li>
+<li>All data available programmatically via web API as well as web page</li>
+</ul>
+</div>
+</div><div class="column" style="width:40%;">
+<p><img data-src="./images/CC0.png"></p>
+<ul>
+<li>CC0 enables scientists, educators, artists and other creators and owners of copyright- or database-protected content to waive those interests in their works and thereby place them as completely as possible in the public domain, so that others may freely build upon, enhance and reuse the works for any purposes without restriction under copyright or database law.
+<ul>
+<li>https://creativecommons.org/share-your-work/public-domain/cc0/</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="neurosynth-sharing-activation-coordinates" class="slide level2">
+<h2>Neurosynth: Sharing activation coordinates</h2>
+<ul>
+<li>Brain activity is reported in a (somewhat) standardized coordinate system</li>
+</ul>
+<p><img data-src="./images/mnicoords.png"></p>
+<p><img data-src="./images/brain_xyz.png" class="absolute" style="top: 0px; left: 80%; height: 25%; "></p>
+</section>
+<section id="creating-meta-analytic-maps" class="slide level2">
+<h2>Creating meta-analytic maps</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 1.2em;">
+<ul>
+<li>Automated Coordinate Extraction
+<ul>
+<li>Automatically extracts activation tables from fMRI papers for 17 journals</li>
+<li>Current database has 14,371 papers (with full text)</li>
+<li>84% sensitivity, 97% specificity against manual database (SumsDB)</li>
+</ul></li>
+<li>Meta-analytic maps created for each paper
+<ul>
+<li>10mm sphere placed at each focus</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div style="font-size: 1.1em;">
+<table>
+<thead>
+<tr class="header">
+<th>X</th>
+<th>Y</th>
+<th>Z</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12</td>
+<td>57</td>
+<td>-6</td>
+</tr>
+<tr class="even">
+<td>33</td>
+<td>21</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>24</td>
+<td>-6</td>
+<td>51</td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>10</td>
+<td>18</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="font-size: 4em; text-align:center;">
+<p>↓</p>
+</div>
+<p><img data-src="./images/neurosynth_spheres.png" class="absolute" style="left: 65%; height: 30%; "></p>
+</div>
+</div>
+<div class="absolute" style="top: 90%; left: 0px; ">
+<p>Yarkoni et al, 2011, <em>Nature Methods</em></p>
+</div>
+</section>
+<section id="section-2" class="slide level2">
+<h2></h2>
+<p><img data-src="./images/neurosynth_wm.png" class="absolute" style="top: 0px; left: 15%; height: 90%; "></p>
+</section>
+<section id="example-of-neurosynth-usage" class="slide level2">
+<h2>Example of Neurosynth usage</h2>
+<p><img data-src="./images/margulies_title.png"> <img data-src="./images/margulies_date.png"></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./images/margulies_fig4.png"></p>
+</div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em;">
+<ul>
+<li>Identified gradients of functional organization across the cortex</li>
+<li>Used Neurosynth to identify the most common terms associated with each gradient</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="neurosynth-impact" class="slide level2">
+<h2>Neurosynth impact</h2>
+</section>
+<section id="neurovault-sharing-neuroimaging-results" class="slide level2">
+<h2>Neurovault: Sharing neuroimaging results</h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<ul>
+<li>The results of most neuroimaging studies are images with statistical estimates at each voxel</li>
+<li>Neurovault.org is an open archive for these results</li>
+</ul>
+</div><div class="column" style="width:75%;">
+<p><img data-src="./images/OpenEcosystem_Feb202219.png"></p>
+</div>
+</div>
+<div class="absolute" style="top: 95%; left: 0px; ">
+<p>Gorgolewski et al., 2015, <em>Frontiers in Neuroinformatics</em></p>
+</div>
+</section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<ul>
+<li><strong>Collections</strong>
+<ul>
+<li>A set of images (such as all images from a particular paper) can be uploaded as a collection</li>
+<li>Each collection receives a persistent identifier</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:75%;">
+<p><img data-src="./images/neurovault_collection.png"></p>
+</div>
+</div>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li><strong>Image browser</strong>
+<ul>
+<li>Individual images can be browsed and downloaded</li>
+<li>A number of analysis tools can also be applied</li>
+<li>Each image also receives a persistent identifier</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="./images/neurovault_browser.png" class="absolute" style="height: 100%; "></p>
+</div>
+</div>
+</section>
+<section id="example-of-neurovault-usage" class="slide level2">
+<h2>Example of Neurovault usage</h2>
+<p><img data-src="./images/menuet_title.png"></p>
+<p><img data-src="./images/menuet_date.png"></p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<p><img data-src="./images/menuet_fig1.png"></p>
+</div><div class="column" style="width:40%;">
+<p><img data-src="./images/menuet_fig3.png"></p>
+</div>
+</div>
+</section>
+<section id="section-5" class="slide level2">
+<h2></h2>
+<p><img data-src="./images/openeuro_landing.png" class="absolute" style="top: 0px; left: 10%; height: 100%; "></p>
+</section>
+<section id="section-6" class="slide level2">
+<h2></h2>
+<div style="font-size: 2em; text-align: center">
+<p>Simply sharing data is not sufficient</p>
+<p>It must be shared in a way that makes it useful!</p>
+</div>
+</section>
+<section id="its-easy-to-share-data-badly" class="slide level2">
+<h2>It’s easy to share data badly</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Data Sharing and Management Snafu in 3 Short Acts</p>
+<ul>
+<li><div style="font-size: 0.7em">
+https://www.youtube.com/watch?v=N2zK3sAtr-4
+</div></li>
+</ul>
+<p><img data-src="./images/sharing_snafu.png" class="absolute" style="height: 45%; "></p>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>I received the data, but when I opened it up it was in hexadecimal</li>
+<li>Yes, that is right</li>
+<li>I cannot read hexadecimal</li>
+<li>You asked for my data and I gave it to you. I have done what you asked.</li>
+</ul>
+<p>…</p>
+<ul>
+<li>Is there a guide to the data anywhere?</li>
+<li>Yes, of course, it is the article that is published in Science.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="brain-imaging-data-structure-bids" class="slide level2">
+<h2>Brain Imaging Data Structure (BIDS)</h2>
+<div style="font-size: 1.2em">
+<ul>
+<li>A community-based open standard for neuroimaging data
+<ul>
+<li>A file organization standard</li>
+<li>A metadata standard</li>
+</ul></li>
+</ul>
+</div>
+<p><img data-src="./images/bids_logo.png" class="absolute" style="top: 40%; left: 0px; height: 30%; "> <img data-src="./images/bids_scidata.png" class="absolute" style="top: 40%; left: 50%; height: 50%; "></p>
+</section>
+<section id="the-development-of-bids" class="slide level2">
+<h2>The development of BIDS</h2>
+<div style="font-size: 1.2em">
+<ul>
+<li>January 2015
+<ul>
+<li>Initial stakeholder meeting at Stanford (funded by INCF)</li>
+<li>Initiated development of a draft standard</li>
+</ul></li>
+<li>September 2015
+<ul>
+<li>Draft standard posted to BIDS web site with 22 example datasets</li>
+<li>Solicited feedback from community</li>
+</ul></li>
+<li>June 2016
+<ul>
+<li>Published paper</li>
+</ul></li>
+<li>September 2018
+<ul>
+<li>BIDS-standard Github organization started</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="bids-principles" class="slide level2">
+<h2>BIDS Principles</h2>
+<div style="font-size: 1.2em">
+<ul>
+<li>Adoption is crucial
+<ul>
+<li>Keep it as similar to existing practices as possible
+<ul>
+<li>Don’t let technology override usability!</li>
+</ul></li>
+<li>Focus on engaging the community</li>
+</ul></li>
+<li>Don’t reinvent the wheel
+<ul>
+<li>Use existing standards when possible</li>
+</ul></li>
+<li>80/20 rule
+<ul>
+<li>Focus on the most common use cases</li>
+<li>Don’t let the perfect be the enemy of the good!</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="from-dicom-to-bids" class="slide level2">
+<h2>From DICOM to BIDS</h2>
+
+<img data-src="./images/dicom_to_bids.png" class="r-stretch"></section>
+<section id="the-importance-of-automated-validation" class="slide level2">
+<h2>The importance of automated validation</h2>
+
+<img data-src="./images/bids_validator.png" class="r-stretch"><p>https://bids-standard.github.io/bids-validator/</p>
+</section>
+<section id="bids-extensions" class="slide level2">
+<h2>BIDS Extensions</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
+<ul>
+<li>BIDS was originally focused on structural/functional MRI data</li>
+<li>BIDS extension process allows extension of the standard through BIDS Extension Proposals (BEPS) initiated by the community
+<ul>
+<li>Patterned after the Python Enhancement Proposal (PEP) process</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<div style=".centered">
+<strong>11 Completed BEPs:</strong>
+</div>
+<table>
+<thead>
+<tr class="header">
+<th>BEP #</th>
+<th>Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BEP001</td>
+<td>Quantitative MRI (qMRI)</td>
+</tr>
+<tr class="even">
+<td>BEP003</td>
+<td>Common Derivatives</td>
+</tr>
+<tr class="odd">
+<td>BEP005</td>
+<td>Arterial Spin Labeling (ASL)</td>
+</tr>
+<tr class="even">
+<td>BEP006</td>
+<td>Electroencephalography (EEG)</td>
+</tr>
+<tr class="odd">
+<td>BEP007</td>
+<td>Hierarchical Event Descriptor (HED) Tags</td>
+</tr>
+<tr class="even">
+<td>BEP008</td>
+<td>Magnetoencephalography (MEG)</td>
+</tr>
+<tr class="odd">
+<td>BEP009</td>
+<td>Positron Emission Tomography (PET)</td>
+</tr>
+<tr class="even">
+<td>BEP010</td>
+<td>intracranial Electroencephalography (iEEG)</td>
+</tr>
+<tr class="odd">
+<td>BEP018</td>
+<td>Genetic information</td>
+</tr>
+<tr class="even">
+<td>BEP030</td>
+<td>Near Infrared Spectroscopy (NIRS)</td>
+</tr>
+<tr class="odd">
+<td>BEP031</td>
+<td>Microscopy</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="the-growing-usage-of-bids-an-example" class="slide level2">
+<h2>The growing usage of BIDS: An example</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
+<ul>
+<li>MRIQC Web API
+<ul>
+<li>Crowdsourced database of MR QC metrics</li>
+<li>QC metrics from ~375K unique BOLD scans and ~280K T1w scans as of June 2022</li>
+<li>Publicly available: https://mriqc.nimh.nih.gov/</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./images/mriqc_webapi_title.png"></p>
+<p><img data-src="./images/mriqc_api_growth.png"></p>
+</div>
+</div>
+</section>
+<section id="bids-enables-a-growing-open-source-software-ecosystem" class="slide level2">
+<h2>BIDS enables a growing open-source software ecosystem</h2>
+<p><img data-src="https://www.nipreps.org/assets/nipreps-chart.png" class="absolute" style="top: 10%; left: 15%; height: 140%; "></p>
+</section>
+<section id="section-7" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="./images/openneuro_walk_1.png"></p>
+</div><div class="column" style="width:30%;">
+<div style="font-size: 1.2em">
+<ul>
+<li>A BRAIN Initiative archive for neuroimaging data</li>
+<li>Supports sharing of any validated BIDS dataset</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="section-8" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_walk_2.png" class="r-stretch"></section>
+<section id="section-9" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_walk_3.png" class="r-stretch"><div class="absolute" style="top: 30%; left: 75%; ">
+<div style="font-size: 1.2em">
+<p>Each shared dataset is versioned and receives a persistent identifier (DOI)</p>
+</div>
+</div>
+</section>
+<section id="section-10" class="slide level2">
+<h2></h2>
+<div style="text-align: center;font-size: 2.5em;fig-align: center">
+Any valid BIDS dataset can be shared via OpenNeuro
+</div>
+</section>
+<section id="section-11" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_1.png" class="r-stretch"></section>
+<section id="section-12" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_2.png" class="r-stretch"></section>
+<section id="section-13" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_3.png" class="r-stretch"></section>
+<section id="section-14" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_4.png" class="r-stretch"></section>
+<section id="section-15" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_5.png" class="r-stretch"></section>
+<section id="section-16" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_6.png" class="r-stretch"></section>
+<section id="section-17" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_7.png" class="r-stretch"></section>
+<section id="section-18" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_8.png" class="r-stretch"></section>
+<section id="section-19" class="slide level2">
+<h2></h2>
+
+<img data-src="./images/openneuro_upload_9.png" class="r-stretch"></section>
+<section id="the-growth-of-openneuro" class="slide level2">
+<h2>The growth of OpenNeuro</h2>
+
+<img data-src="./images/combined_growth.png" class="r-stretch"></section>
+<section id="the-diversity-of-openneuro-datasets" class="slide level2">
+<h2>The diversity of OpenNeuro datasets</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="./images/dataset_size.png"></p>
+</div><div class="column" style="width:25%;">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Datatype</strong></th>
+<th style="text-align: right;"><em>#</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">mri - anat</td>
+<td style="text-align: right;">597</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mri - func</td>
+<td style="text-align: right;">521</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">eeg</td>
+<td style="text-align: right;">120</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mri - dwi</td>
+<td style="text-align: right;">67</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">meg</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ieeg</td>
+<td style="text-align: right;">17</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">beh</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pet</td>
+<td style="text-align: right;">11</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:25%;">
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Species</strong></th>
+<th style="text-align: right;"><em>#</em></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Human</td>
+<td style="text-align: right;">676</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mouse</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rat</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NHP</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">phantoms</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Juvenile pigs</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Human, Mouse</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Dog</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Monkey</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sheep</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="absolute" style="top: 95%; left: 0px; ">
+<p>updated from Markiewicz et al, 2021, <em>eLife</em></p>
+</div>
+</section>
+<section id="scholarly-reuse-of-openneuro-datasets" class="slide level2">
+<h2>Scholarly reuse of OpenNeuro datasets</h2>
+
+<img data-src="images/openneuro_reuse.png" class="r-stretch"><div class="absolute" style="top: 95%; left: 0px; ">
+<p>Markiewicz et al, 2021, <em>eLife</em></p>
+</div>
+</section>
+<section id="example-of-openneuro-reuse" class="slide level2">
+<h2>Example of OpenNeuro reuse</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li>A challenge for decoding brain activity from fMRI data is that most datasets are very small</li>
+<li>We used OpenNeuro to train a “foundation model”
+<ul>
+<li>A pre-trained model that can be used as a starting point for decoding models on smaller datasets</li>
+</ul></li>
+<li>We pre-train models on broad fMRI data from OpenNeuro: 11,980 experimental runs from 1,726 individuals across 34 datasets.</li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p><img data-src="./images/thomas_results.png"></p>
+<ul>
+<li>This approach substantially increased decoding performance vs.&nbsp;a baseline model</li>
+</ul>
+</div>
+</div>
+<div class="absolute" style="top: 95%; left: 0px; ">
+<p>Thomas, Ré, &amp; Poldrack, 2022, <em>NeurIPS</em></p>
+</div>
+</section>
+<section id="challenges-to-open-sharing" class="slide level2">
+<h2>Challenges to open sharing</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>All OpenNeuro MRI datasets must be <em>defaced</em>
+<ul>
+<li>To reduce risk of reidentification</li>
+</ul></li>
+<li>There is increasing risk that subjects might be reidentified even after defacing using advanced face recognition systems + face imputation tools (Schwartz et al., 2021)</li>
+<li>If the risk continues to rise, it may become necessary to move away from open sharing
+<ul>
+<li>This would be a huge loss for researchers, research participants, and the world</li>
+</ul></li>
+<li>We have proposed regulatory changes to protect subjects from misuse of neuroscience information in the US context (Jwa &amp; Poldrack, 2022, <em>J. Law &amp; Biosciences</em>)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./images/defacing.png"></p>
+</div>
+</div>
+</section>
+<section id="keys-to-success-in-neuroimaging-data-sharing" class="slide level2">
+<h2>Keys to success in neuroimaging data sharing</h2>
+<div style="font-size: 1.2em">
+<ul>
+<li>Data are digital end-to-end
+<ul>
+<li>Minimizes manual steps in the process</li>
+</ul></li>
+<li>Standardized file formats and data standards
+<ul>
+<li>Makes data immediately usable by anyone</li>
+<li>Reduces burden of curation and preparation</li>
+</ul></li>
+<li>Demonstrated scientific utility</li>
+<li>Numerous success stories</li>
+</ul>
+</div>
+</section>
+<section id="lessons-learned" class="slide level2">
+<h2>Lessons learned</h2>
+<div style="font-size: 1.2em">
+<ul>
+<li>Community buy-in is essential
+<ul>
+<li>Mandates put in place before the community is ready can backfire
+<ul>
+<li>Unless they have overwhelmingly powerful advocates, as in genomics</li>
+</ul></li>
+<li>Important that sharing advocates are members of community and eat their own dog food</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="lessons-learned-1" class="slide level2">
+<h2>Lessons learned</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
+<ul>
+<li>Keep it simple and as close to standard practice as possible
+<ul>
+<li>Overengineered solutions have generally failed</li>
+<li>If there are more than 2 acronyms…</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./images/birn.png"></p>
+</div>
+</div>
+</section>
+<section id="lessons-learned-2" class="slide level2">
+<h2>Lessons learned</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
+<ul>
+<li>Don’t let the perfect be the enemy of the good
+<ul>
+<li>20% of the effort will cover 80% of the datasets - focus on these!</li>
+<li>There is a long tail of edge cases with loud advocates</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:30%;">
+<div style=" display: flex; justify-content: center;">
+<p><img data-src="./images/pareto.png"></p>
+</div>
+<div style="text-align: center;font-size: 1.2em;fig-align: center">
+<p>Vilfredo Pareto</p>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusions" class="slide level2">
+<h2>Conclusions</h2>
+<div style="font-size: 1.3em">
+<ul>
+<li>The field of neuroimaging has built an enviable ecosystem for open science</li>
+<li>Infrastructure is critical to ease friction</li>
+<li>Community engagement has been key to adoption</li>
+<li>Need to keep the tools as close as possible to current practice</li>
+</ul>
+</div>
+</section>
+<section id="section-20" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="text-align: center;font-size: 1.4em;fig-align: center">
+<p>The Poldrack Lab</p>
+</div>
+<div style="display: flex; justify-content: center;">
+<p><img data-src="./images/poldracklab_2022.png" height="400"></p>
+</div>
+<div style="text-align: center;font-size: 1.4em;fig-align: center">
+<p>Funding</p>
+</div>
+<p><img data-src="./images/brain_initiative_logo.png" height="200"> <img data-src="./images/nsf_logo.png" height="200"> <img data-src="./images/ljaf.png" height="200"> <img data-src="./images/NIH-NIMH-logo-new.png" height="200"></p>
+</div><div class="column" style="width:50%;">
+<div style="text-align: center;font-size: 1.4em;fig-align: center">
+<p>OpenNeuro Team</p>
+</div>
+<p><img data-src="./images/chris_g.png" height="200"> <img data-src="./images/nell.png" height="200"> <img data-src="./images/chris_m.png" height="200"> <img data-src="./images/ross.png" height="200"> <img data-src="./images/annie.png" height="200"> <img data-src="./images/mathias.png" height="200"> <img data-src="./images/oscar.png" height="200"></p>
+<div style="text-align: center;font-size: 1.4em;fig-align: center">
+<p>Collaborators</p>
+</div>
+<p><img data-src="./images/yarick.png" height="200"> <img data-src="./images/tal.png" height="200"> <img data-src="./images/satra.png" height="200"> <img data-src="./images/adam.jpg" height="200"></p>
+</div>
+</div>
+</section>
+<section id="section-21" class="slide level2">
+<h2></h2>
+</section>
+<section id="section-22" class="slide level2">
+<h2></h2>
+</section>
+<section id="meta-analytic-decoding-using-neurosynth" class="slide level2">
+<h2>Meta-analytic decoding using Neurosynth</h2>
+<div style="font-size: 1.2em;">
+<ul>
+<li>Given 2+ terms, can determine which is most likely given the data</li>
+<li>Naive Bayes classifier: assumes that all features (voxels) are independent; selects the most probable class</li>
+<li>Can apply this to any activation map—studies, individual subjects, etc.</li>
+</ul>
+</div>
+
+<img data-src="./images/neurosynth_classification.png" class="r-stretch"><div class="absolute" style="top: 90%; left: 0px; ">
+<p>Yarkoni et al, 2011, <em>Nature Methods</em></p>
+</div>
+</section>
+<section id="section-23" class="slide level2">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:25%;">
+<ul>
+<li>Cross-validated classification of all studies in database</li>
+<li>Select 25 high-frequency terms</li>
+<li>Pairwise classification: how well can we distinguish between the presence of each pair of terms?</li>
+</ul>
+</div><div class="column" style="width:75%;">
+<p><img data-src="./images/neurosynth_pairwise.png" class="absolute" style="height: 100%; "></p>
+</div>
+</div>
+<div class="absolute" style="top: 98%; left: 0px; ">
+<p>Yarkoni et al, 2011, <em>Nature Methods</em></p>
+</div>
 
 <div class="footer footer-default">
 <p>https://poldrack.github.io/talks-OpenScienceEcosystem/</p>
@@ -531,7 +1407,7 @@ Russ Poldrack
         height: 1080,
 
         // Factor of the display size that should remain empty around the content
-        margin: 0.1,
+        margin: 5.0e-2,
 
         math: {
           mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
