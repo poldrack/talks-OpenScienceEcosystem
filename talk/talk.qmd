@@ -20,7 +20,7 @@ format:
 
 ## Conflicts of interest
 
-- I am a paid consultant for the National Institute of Mental Health
+- I am a paid consultant for the US National Institute of Mental Health
 
 ##
 
