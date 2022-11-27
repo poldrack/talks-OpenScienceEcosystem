@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "talk.html#conflicts-of-interest",
+    "href": "talk.html#conflicts-of-interest",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "Conflicts of interest",
+    "text": "Conflicts of interest\n\nI am a paid consultant for the National Institute of Mental Health"
+  },
+  {
     "objectID": "talk.html#section",
     "href": "talk.html#section",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
@@ -82,13 +89,6 @@
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "Example of Neurosynth usage",
     "text": "Example of Neurosynth usage\n \n\n\n\n\n\n\nIdentified gradients of functional organization across the cortex\nUsed Neurosynth to identify the most common terms associated with each gradient"
-  },
-  {
-    "objectID": "talk.html#neurosynth-impact",
-    "href": "talk.html#neurosynth-impact",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Neurosynth impact",
-    "text": "Neurosynth impact"
   },
   {
     "objectID": "talk.html#neurovault-sharing-neuroimaging-results",

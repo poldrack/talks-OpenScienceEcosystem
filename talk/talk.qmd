@@ -18,6 +18,10 @@ format:
     margin: 0.05
 ---
 
+## Conflicts of interest
+
+- I am a paid consultant for the National Institute of Mental Health
+
 ##
 
 <div style="text-align: center;font-size: 2.5em;fig-align: center">
@@ -229,9 +233,6 @@ Yarkoni et al, 2011, *Nature Methods*
 :::
 ::::
 
-## Neurosynth impact
-
-
 
 ## Neurovault: Sharing neuroimaging results
 :::: {.columns}
@@ -354,13 +355,13 @@ Data Sharing and Management Snafu in 3 Short Acts
 
 ## BIDS Principles
 <div style='font-size: 1.2em'>
-- Adoption is crucial
+- *Adoption is crucial*
   - Keep it as similar to existing practices as possible
      - Don’t let technology override usability!
   - Focus on engaging the community
-- Don’t reinvent the wheel
+- *Don’t reinvent the wheel*
   - Use existing standards when possible
-- 80/20 rule
+- *80/20 rule*
   - Focus on the most common use cases
   - Don’t let the perfect be the enemy of the good!
 </div>
@@ -597,13 +598,13 @@ Thomas, Ré, & Poldrack, 2022, *NeurIPS*
 ## Keys to success in neuroimaging data sharing
 
 <div style='font-size: 1.2em'>
-- Data are digital end-to-end
+- *Data are digital end-to-end*
   - Minimizes manual steps in the process
-- Standardized file formats and data standards
+- *Standardized file formats and data standards*
   - Makes data immediately usable by anyone
   - Reduces burden of curation and preparation
-- Demonstrated scientific utility
-- Numerous success stories
+- *Demonstrated scientific utility*
+- *Numerous success stories*
 </div>
 
 ## Lessons learned
