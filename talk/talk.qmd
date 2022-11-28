@@ -8,6 +8,7 @@ title-slide-attributes:
 format:
   revealjs: 
     footer: "https://poldrack.github.io/talks-OpenScienceEcosystem/"
+    pdf-max-pages-per-slide: 1
     slide-number: true
     chalkboard: 
       buttons: false
