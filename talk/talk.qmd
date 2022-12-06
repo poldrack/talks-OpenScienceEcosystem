@@ -18,12 +18,6 @@ format:
     width: 1920
     margin: 0.05
 ---
-
-## Conflicts of interest
-
-- I have research grants from the US National Institutes of Health
-- I am a paid consultant for the US National Institute of Mental Health
-
 ##
 
 <div style="text-align: center;font-size: 2.5em;fig-align: center">
@@ -54,7 +48,7 @@ An article about computational science in a scientific publication is not the sc
 <div style="text-align: center;fig-align: center; font-size: 1.5em;">
 ![](./images/claerbout.png)
 
-- Jon Claerbout
+Jon Claerbout
 </div>
 :::
 ::::
@@ -144,9 +138,11 @@ Anonymous senior researcher:
 ![](images/ecosystem_fig.png)
 :::
 ::: {.column width="30%"}
+<div style='font-size: 1.2em' >
 - Neurosynth.org: Open database of published neuroimaging coordinates
 - Neurovault.org: Open archive for neuroimaging results
 - OpenNeuro.org: Open archive for raw/processed neuroimaging data
+</div>
 :::
 ::::
 
@@ -216,6 +212,24 @@ Yarkoni et al, 2011, *Nature Methods*
 
 ![](./images/neurosynth_wm.png){.absolute top=0 left=15% height=90%}
 
+
+
+##
+
+![](./images/neurosynth_classification.png){.absolute top=0 left=15% height=35%}
+
+
+
+##
+
+![](./images/neurosynth_classification.png){.absolute top=0 left=15% height=35%}
+
+![](./images/neurosynth_newsub.png){.absolute top=40% left=0% height=60%}
+
+
+## Decoding brain activity patterns using Neurosynth
+
+![](./images/neurosynth_multiclass.png){.absolute top=10% left=15% height=130%}
 
 
 ## Example of Neurosynth usage
@@ -295,8 +309,9 @@ Gorgolewski et al., 2015, *Frontiers in Neuroinformatics*
 :::
 ::::
 
-## 
-![](./images/openeuro_landing.png){.absolute top=0 left=10% height=100%}
+## OpenNeuro: Sharing raw and processed neuroimaging data
+
+![](./images/openeuro_landing.png){.absolute top=10% left=10% height=100%}
 
 ##
 
@@ -312,13 +327,17 @@ It must be shared in a way that makes it useful!
 
 Data Sharing and Management Snafu in 3 Short Acts
 
-- <div style='font-size: 0.7em'>https://www.youtube.com/watch?v=N2zK3sAtr-4</div>
 
 ![](./images/sharing_snafu.png){.absolute height=45%}
+
+::: {.absolute top=70% left=5%}
+<div style='font-size: 0.7em'>https://www.youtube.com/watch?v=N2zK3sAtr-4</div>
+:::
 
 
 :::
 ::: {.column width="50%"}
+<div style='font-size: 1.2em'>
 - I received the data, but when I opened it up it was in hexadecimal
 - Yes, that is right
 - I cannot read hexadecimal
@@ -328,6 +347,7 @@ Data Sharing and Management Snafu in 3 Short Acts
 
 - Is there a guide to the data anywhere?
 - Yes, of course, it is the article that is published in Science.
+</div>
 :::
 ::::
 
@@ -434,14 +454,63 @@ https://mriqc.nimh.nih.gov/
 ![](https://www.nipreps.org/assets/nipreps-chart.png){.absolute top=10% left=15% height=140%}
 
 
-##
+## BIDS Apps
+
+![](./images/bidsapps_title.png){.absolute top=0 left=0 height=60%}
+![](./images/bidsapps_date.png){.absolute top=65% left=0%, width=70%}
+
+:::{.absolute top=80% style='font-size: 1.4em;'}
+- Containerized applications that can be run on a BIDS dataset
+  - Containers provide ease of use as well as better reproducibility
+:::
+
+## fMRIprep: Robust preprocessing of fMRI data
+
+![](./images/fmriprep/fmriprep.jpg){.absolute top=10% left=10% height=95%}
+
+:::{.absolute top=100% style='font-size: 1.4em;'}
+fmriprep.org; Esteban et al, 2019
+:::
+
+
+## MRIQC: MRI quality control for BIDS data
+
+![](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0184661.g005){.absolute top=10% left=20% height=95%}
+
+:::{.absolute top=100% style='font-size: 1.4em;'}
+mriqc.org; Esteban et al, 2017
+:::
+
+## Tenmplateflow: FAIR Sharing of Neuroimaging Templates
+
+:::: {.columns}
+::: {.column width="40%"}
+<div style='font-size: 1.2em'>
+- Templates and atlases are commonly used in neuroimaging
+- There is a significant lack of clarity in the use of these templates
+  - There are numerous versions of the widely used "MNI template"
+- Templateflow provides programmatic access to templates and mappings between them in a BIDS-like format
+</div>
+:::
+::: {.column width="60%"}
+![](https://www.templateflow.org/assets/templateflow_fig-templates.png)
+:::
+::::
+
+
+:::{.absolute top=100% style='font-size: 1.4em;'}
+templateflow.org; Ciric et al., 2022
+:::
+
+
+## OpenNeuro: A BRAIN Initiative archive for BIDS data
+
 :::: {.columns}
 ::: {.column width="70%"}
 ![](./images/openneuro_walk_1.png)
 :::
 ::: {.column width="30%"}
 <div style='font-size: 1.2em'>
-- A BRAIN Initiative archive for neuroimaging data
 - Supports sharing of any validated BIDS dataset
 </div>
 
@@ -555,6 +624,20 @@ updated from Markiewicz et al, 2021, *eLife*
 ::: {.absolute top=95% left=0}
 Markiewicz et al, 2021, *eLife*
 :::
+
+## Processing of OpenNeuro data
+
+:::: {.columns}
+::: {.column width="50%"}
+brainlife.io: processing of MRI data
+![](./images/brainlife/projects.png)
+
+:::
+::: {.column width="50%"}
+NEMAR.org: processing of EEG/MEG data
+![](./images/nemar/datasummary.png){.absolute top=15% left=55% height=90%}
+:::
+::::
 
 ## Example of OpenNeuro reuse
 

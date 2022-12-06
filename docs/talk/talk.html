@@ -340,13 +340,6 @@ Russ Poldrack
 </div>
 
 </section>
-<section id="conflicts-of-interest" class="slide level2">
-<h2>Conflicts of interest</h2>
-<ul>
-<li>I have research grants from the US National Institutes of Health</li>
-<li>I am a paid consultant for the US National Institute of Mental Health</li>
-</ul>
-</section>
 <section id="section" class="slide level2">
 <h2></h2>
 <div style="text-align: center;font-size: 2.5em;fig-align: center">
@@ -373,9 +366,7 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 </div><div class="column" style="width:40%;">
 <div style="text-align: center;fig-align: center; font-size: 1.5em;">
 <p><img data-src="./images/claerbout.png"></p>
-<ul>
-<li>Jon Claerbout</li>
-</ul>
+<p>Jon Claerbout</p>
 </div>
 </div>
 </div>
@@ -454,11 +445,13 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 <div class="column" style="width:70%;">
 <p><img data-src="images/ecosystem_fig.png"></p>
 </div><div class="column" style="width:30%;">
+<div style="font-size: 1.2em">
 <ul>
 <li>Neurosynth.org: Open database of published neuroimaging coordinates</li>
 <li>Neurovault.org: Open archive for neuroimaging results</li>
 <li>OpenNeuro.org: Open archive for raw/processed neuroimaging data</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -562,6 +555,19 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 <h2></h2>
 <p><img data-src="./images/neurosynth_wm.png" class="absolute" style="top: 0px; left: 15%; height: 90%; "></p>
 </section>
+<section id="section-3" class="slide level2">
+<h2></h2>
+<p><img data-src="./images/neurosynth_classification.png" class="absolute" style="top: 0px; left: 15%; height: 35%; "></p>
+</section>
+<section id="section-4" class="slide level2">
+<h2></h2>
+<p><img data-src="./images/neurosynth_classification.png" class="absolute" style="top: 0px; left: 15%; height: 35%; "></p>
+<p><img data-src="./images/neurosynth_newsub.png" class="absolute" style="top: 40%; left: 0%; height: 60%; "></p>
+</section>
+<section id="decoding-brain-activity-patterns-using-neurosynth" class="slide level2">
+<h2>Decoding brain activity patterns using Neurosynth</h2>
+<p><img data-src="./images/neurosynth_multiclass.png" class="absolute" style="top: 10%; left: 15%; height: 130%; "></p>
+</section>
 <section id="example-of-neurosynth-usage" class="slide level2">
 <h2>Example of Neurosynth usage</h2>
 <p><img data-src="./images/margulies_title.png"> <img data-src="./images/margulies_date.png"></p>
@@ -594,7 +600,7 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 <p>Gorgolewski et al., 2015, <em>Frontiers in Neuroinformatics</em></p>
 </div>
 </section>
-<section id="section-3" class="slide level2">
+<section id="section-5" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:25%;">
@@ -610,7 +616,7 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 </div>
 </div>
 </section>
-<section id="section-4" class="slide level2">
+<section id="section-6" class="slide level2">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -639,11 +645,11 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 </div>
 </div>
 </section>
-<section id="section-5" class="slide level2">
-<h2></h2>
-<p><img data-src="./images/openeuro_landing.png" class="absolute" style="top: 0px; left: 10%; height: 100%; "></p>
+<section id="openneuro-sharing-raw-and-processed-neuroimaging-data" class="slide level2">
+<h2>OpenNeuro: Sharing raw and processed neuroimaging data</h2>
+<p><img data-src="./images/openeuro_landing.png" class="absolute" style="top: 10%; left: 10%; height: 100%; "></p>
 </section>
-<section id="section-6" class="slide level2">
+<section id="section-7" class="slide level2">
 <h2></h2>
 <div style="font-size: 2em; text-align: center">
 <p>Simply sharing data is not sufficient</p>
@@ -655,13 +661,14 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>Data Sharing and Management Snafu in 3 Short Acts</p>
-<ul>
-<li><div style="font-size: 0.7em">
-https://www.youtube.com/watch?v=N2zK3sAtr-4
-</div></li>
-</ul>
 <p><img data-src="./images/sharing_snafu.png" class="absolute" style="height: 45%; "></p>
+<div class="absolute" style="top: 70%; left: 5%; ">
+<div style="font-size: 0.7em">
+https://www.youtube.com/watch?v=N2zK3sAtr-4
+</div>
+</div>
 </div><div class="column" style="width:50%;">
+<div style="font-size: 1.2em">
 <ul>
 <li>I received the data, but when I opened it up it was in hexadecimal</li>
 <li>Yes, that is right</li>
@@ -673,6 +680,7 @@ https://www.youtube.com/watch?v=N2zK3sAtr-4
 <li>Is there a guide to the data anywhere?</li>
 <li>Yes, of course, it is the article that is published in Science.</li>
 </ul>
+</div>
 </div>
 </div>
 </section>
@@ -845,15 +853,62 @@ https://www.youtube.com/watch?v=N2zK3sAtr-4
 <h2>BIDS enables a growing open-source software ecosystem</h2>
 <p><img data-src="https://www.nipreps.org/assets/nipreps-chart.png" class="absolute" style="top: 10%; left: 15%; height: 140%; "></p>
 </section>
-<section id="section-7" class="slide level2">
-<h2></h2>
+<section id="bids-apps" class="slide level2">
+<h2>BIDS Apps</h2>
+<p><img data-src="./images/bidsapps_title.png" class="absolute" style="top: 0px; left: 0px; height: 60%; "> <img data-src="./images/bidsapps_date.png" class="absolute" style="top: 65%; left: 0%,; width: 70%; "></p>
+<div class="absolute" style="font-size: 1.4em;top: 80%; ">
+<ul>
+<li>Containerized applications that can be run on a BIDS dataset
+<ul>
+<li>Containers provide ease of use as well as better reproducibility</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="fmriprep-robust-preprocessing-of-fmri-data" class="slide level2">
+<h2>fMRIprep: Robust preprocessing of fMRI data</h2>
+<p><img data-src="./images/fmriprep/fmriprep.jpg" class="absolute" style="top: 10%; left: 10%; height: 95%; "></p>
+<div class="absolute" style="font-size: 1.4em;top: 100%; ">
+<p>fmriprep.org; Esteban et al, 2019</p>
+</div>
+</section>
+<section id="mriqc-mri-quality-control-for-bids-data" class="slide level2">
+<h2>MRIQC: MRI quality control for BIDS data</h2>
+<p><img data-src="https://journals.plos.org/plosone/article/figure/image?size=large&amp;id=10.1371/journal.pone.0184661.g005" class="absolute" style="top: 10%; left: 20%; height: 95%; "></p>
+<div class="absolute" style="font-size: 1.4em;top: 100%; ">
+<p>mriqc.org; Esteban et al, 2017</p>
+</div>
+</section>
+<section id="tenmplateflow-fair-sharing-of-neuroimaging-templates" class="slide level2">
+<h2>Tenmplateflow: FAIR Sharing of Neuroimaging Templates</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div style="font-size: 1.2em">
+<ul>
+<li>Templates and atlases are commonly used in neuroimaging</li>
+<li>There is a significant lack of clarity in the use of these templates
+<ul>
+<li>There are numerous versions of the widely used “MNI template”</li>
+</ul></li>
+<li>Templateflow provides programmatic access to templates and mappings between them in a BIDS-like format</li>
+</ul>
+</div>
+</div><div class="column" style="width:60%;">
+<p><img data-src="https://www.templateflow.org/assets/templateflow_fig-templates.png"></p>
+</div>
+</div>
+<div class="absolute" style="font-size: 1.4em;top: 100%; ">
+<p>templateflow.org; Ciric et al., 2022</p>
+</div>
+</section>
+<section id="openneuro-a-brain-initiative-archive-for-bids-data" class="slide level2">
+<h2>OpenNeuro: A BRAIN Initiative archive for BIDS data</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><img data-src="./images/openneuro_walk_1.png"></p>
 </div><div class="column" style="width:30%;">
 <div style="font-size: 1.2em">
 <ul>
-<li>A BRAIN Initiative archive for neuroimaging data</li>
 <li>Supports sharing of any validated BIDS dataset</li>
 </ul>
 </div>
@@ -1029,6 +1084,16 @@ Any valid BIDS dataset can be shared via OpenNeuro
 
 <img data-src="images/openneuro_reuse.png" class="r-stretch"><div class="absolute" style="top: 95%; left: 0px; ">
 <p>Markiewicz et al, 2021, <em>eLife</em></p>
+</div>
+</section>
+<section id="processing-of-openneuro-data" class="slide level2">
+<h2>Processing of OpenNeuro data</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>brainlife.io: processing of MRI data <img data-src="./images/brainlife/projects.png"></p>
+</div><div class="column" style="width:50%;">
+<p>NEMAR.org: processing of EEG/MEG data <img data-src="./images/nemar/datasummary.png" class="absolute" style="top: 15%; left: 55%; height: 90%; "></p>
+</div>
 </div>
 </section>
 <section id="example-of-openneuro-reuse" class="slide level2">

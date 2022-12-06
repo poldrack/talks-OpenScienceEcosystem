@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "talk.html#conflicts-of-interest",
-    "href": "talk.html#conflicts-of-interest",
-    "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "Conflicts of interest",
-    "text": "Conflicts of interest\n\nI have research grants from the US National Institutes of Health\nI am a paid consultant for the US National Institute of Mental Health"
-  },
-  {
     "objectID": "talk.html#section",
     "href": "talk.html#section",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
@@ -18,7 +11,7 @@
     "href": "talk.html#section-1",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
-    "text": "“we can distill Claerbout’s insight into a slogan:\nAn article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures..”\n\nBuckheit & Donoho, 1995\n\n\n\n\n\n\nJon Claerbout"
+    "text": "“we can distill Claerbout’s insight into a slogan:\nAn article about computational science in a scientific publication is not the scholarship itself, it is merely advertising of the scholarship. The actual scholarship is the complete software development environment and the complete set of instructions which generated the figures..”\n\nBuckheit & Donoho, 1995\n\n\n\n\n\nJon Claerbout"
   },
   {
     "objectID": "talk.html#why-neuroimaging-is-a-best-case-scenario-for-open-science",
@@ -60,7 +53,7 @@
     "href": "talk.html#an-open-ecosystem-for-retrospective-data-sharing",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "An open ecosystem for retrospective data sharing",
-    "text": "An open ecosystem for retrospective data sharing\n\n\n\n\n\nNeurosynth.org: Open database of published neuroimaging coordinates\nNeurovault.org: Open archive for neuroimaging results\nOpenNeuro.org: Open archive for raw/processed neuroimaging data"
+    "text": "An open ecosystem for retrospective data sharing\n\n\n\n\n\n\nNeurosynth.org: Open database of published neuroimaging coordinates\nNeurovault.org: Open archive for neuroimaging results\nOpenNeuro.org: Open archive for raw/processed neuroimaging data"
   },
   {
     "objectID": "talk.html#maximally-open-sharing",
@@ -84,6 +77,13 @@
     "text": "Creating meta-analytic maps\n\n\n\n\nAutomated Coordinate Extraction\n\nAutomatically extracts activation tables from fMRI papers for 17 journals\nCurrent database has 14,371 papers (with full text)\n84% sensitivity, 97% specificity against manual database (SumsDB)\n\nMeta-analytic maps created for each paper\n\n10mm sphere placed at each focus\n\n\n\n\n\n\n\n\nX\nY\nZ\n\n\n\n\n12\n57\n-6\n\n\n33\n21\n15\n\n\n24\n-6\n51\n\n\n28\n10\n18\n\n\n\n\n\n↓\n\n\n\n\n\nYarkoni et al, 2011, Nature Methods"
   },
   {
+    "objectID": "talk.html#decoding-brain-activity-patterns-using-neurosynth",
+    "href": "talk.html#decoding-brain-activity-patterns-using-neurosynth",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "Decoding brain activity patterns using Neurosynth",
+    "text": "Decoding brain activity patterns using Neurosynth"
+  },
+  {
     "objectID": "talk.html#example-of-neurosynth-usage",
     "href": "talk.html#example-of-neurosynth-usage",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
@@ -98,15 +98,15 @@
     "text": "Neurovault: Sharing neuroimaging results\n\n\n\nThe results of most neuroimaging studies are images with statistical estimates at each voxel\nNeurovault.org is an open archive for these results\n\n\n\n\n\n\nGorgolewski et al., 2015, Frontiers in Neuroinformatics"
   },
   {
-    "objectID": "talk.html#section-3",
-    "href": "talk.html#section-3",
+    "objectID": "talk.html#section-5",
+    "href": "talk.html#section-5",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
     "text": "Collections\n\nA set of images (such as all images from a particular paper) can be uploaded as a collection\nEach collection receives a persistent identifier"
   },
   {
-    "objectID": "talk.html#section-4",
-    "href": "talk.html#section-4",
+    "objectID": "talk.html#section-6",
+    "href": "talk.html#section-6",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
     "text": "Image browser\n\nIndividual images can be browsed and downloaded\nA number of analysis tools can also be applied\nEach image also receives a persistent identifier"
@@ -119,8 +119,15 @@
     "text": "Example of Neurovault usage"
   },
   {
-    "objectID": "talk.html#section-6",
-    "href": "talk.html#section-6",
+    "objectID": "talk.html#openneuro-sharing-raw-and-processed-neuroimaging-data",
+    "href": "talk.html#openneuro-sharing-raw-and-processed-neuroimaging-data",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "OpenNeuro: Sharing raw and processed neuroimaging data",
+    "text": "OpenNeuro: Sharing raw and processed neuroimaging data"
+  },
+  {
+    "objectID": "talk.html#section-7",
+    "href": "talk.html#section-7",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "",
     "text": "Simply sharing data is not sufficient\nIt must be shared in a way that makes it useful!"
@@ -130,7 +137,7 @@
     "href": "talk.html#its-easy-to-share-data-badly",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "It’s easy to share data badly",
-    "text": "It’s easy to share data badly\n\n\nData Sharing and Management Snafu in 3 Short Acts\n\n\nhttps://www.youtube.com/watch?v=N2zK3sAtr-4\n\n\n\n\n\nI received the data, but when I opened it up it was in hexadecimal\nYes, that is right\nI cannot read hexadecimal\nYou asked for my data and I gave it to you. I have done what you asked.\n\n…\n\nIs there a guide to the data anywhere?\nYes, of course, it is the article that is published in Science."
+    "text": "It’s easy to share data badly\n\n\nData Sharing and Management Snafu in 3 Short Acts\n\n\n\nhttps://www.youtube.com/watch?v=N2zK3sAtr-4\n\n\n\n\n\nI received the data, but when I opened it up it was in hexadecimal\nYes, that is right\nI cannot read hexadecimal\nYou asked for my data and I gave it to you. I have done what you asked.\n\n…\n\nIs there a guide to the data anywhere?\nYes, of course, it is the article that is published in Science."
   },
   {
     "objectID": "talk.html#brain-imaging-data-structure-bids",
@@ -189,11 +196,39 @@
     "text": "BIDS enables a growing open-source software ecosystem"
   },
   {
-    "objectID": "talk.html#section-7",
-    "href": "talk.html#section-7",
+    "objectID": "talk.html#bids-apps",
+    "href": "talk.html#bids-apps",
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
-    "section": "",
-    "text": "A BRAIN Initiative archive for neuroimaging data\nSupports sharing of any validated BIDS dataset"
+    "section": "BIDS Apps",
+    "text": "BIDS Apps\n \n\n\nContainerized applications that can be run on a BIDS dataset\n\nContainers provide ease of use as well as better reproducibility"
+  },
+  {
+    "objectID": "talk.html#fmriprep-robust-preprocessing-of-fmri-data",
+    "href": "talk.html#fmriprep-robust-preprocessing-of-fmri-data",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "fMRIprep: Robust preprocessing of fMRI data",
+    "text": "fMRIprep: Robust preprocessing of fMRI data\n\n\nfmriprep.org; Esteban et al, 2019"
+  },
+  {
+    "objectID": "talk.html#mriqc-mri-quality-control-for-bids-data",
+    "href": "talk.html#mriqc-mri-quality-control-for-bids-data",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "MRIQC: MRI quality control for BIDS data",
+    "text": "MRIQC: MRI quality control for BIDS data\n\n\nmriqc.org; Esteban et al, 2017"
+  },
+  {
+    "objectID": "talk.html#tenmplateflow-fair-sharing-of-neuroimaging-templates",
+    "href": "talk.html#tenmplateflow-fair-sharing-of-neuroimaging-templates",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "Tenmplateflow: FAIR Sharing of Neuroimaging Templates",
+    "text": "Tenmplateflow: FAIR Sharing of Neuroimaging Templates\n\n\n\n\nTemplates and atlases are commonly used in neuroimaging\nThere is a significant lack of clarity in the use of these templates\n\nThere are numerous versions of the widely used “MNI template”\n\nTemplateflow provides programmatic access to templates and mappings between them in a BIDS-like format\n\n\n\n\n\n\n\ntemplateflow.org; Ciric et al., 2022"
+  },
+  {
+    "objectID": "talk.html#openneuro-a-brain-initiative-archive-for-bids-data",
+    "href": "talk.html#openneuro-a-brain-initiative-archive-for-bids-data",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "OpenNeuro: A BRAIN Initiative archive for BIDS data",
+    "text": "OpenNeuro: A BRAIN Initiative archive for BIDS data\n\n\n\n\n\n\nSupports sharing of any validated BIDS dataset"
   },
   {
     "objectID": "talk.html#section-9",
@@ -229,6 +264,13 @@
     "title": "Toward an Open Science Ecosystem in Neuroimaging",
     "section": "Scholarly reuse of OpenNeuro datasets",
     "text": "Scholarly reuse of OpenNeuro datasets\n\n\nMarkiewicz et al, 2021, eLife"
+  },
+  {
+    "objectID": "talk.html#processing-of-openneuro-data",
+    "href": "talk.html#processing-of-openneuro-data",
+    "title": "Toward an Open Science Ecosystem in Neuroimaging",
+    "section": "Processing of OpenNeuro data",
+    "text": "Processing of OpenNeuro data\n\n\nbrainlife.io: processing of MRI data \n\nNEMAR.org: processing of EEG/MEG data"
   },
   {
     "objectID": "talk.html#example-of-openneuro-reuse",
