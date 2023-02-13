@@ -1,5 +1,5 @@
 # This tag should match the release tag in Github
-TAG = "OpenScienceEcosystem_Michigan_12_08_2022"
+TAG = "OpenScienceEcosystem_Tuebingen_02_15_2023"
 
 
 all: render-talk render-pdf render-site
@@ -26,7 +26,7 @@ render-site:
 
 render-pdf:
 	-mkdir docs/pdfs
-	decktape --size="2048x1536" reveal docs/talk/talk.html docs/pdfs/$(TAG).pdf
+	decktape --size="1920x1080" reveal docs/talk/talk.html docs/pdfs/$(TAG).pdf
 	git add docs/pdfs/$(TAG).pdf
 	git commit -m"adding pdf [skip ci]"
 	git push origin main
