@@ -26,7 +26,7 @@ render-site:
 
 render-pdf:
 	-mkdir docs/pdfs
-	decktape -s 1920x1080 reveal docs/talk/talk.html docs/pdfs/$(TAG).pdf
+	decktape --size="2048x1536" reveal docs/talk/talk.html docs/pdfs/$(TAG).pdf
 	git add docs/pdfs/$(TAG).pdf
 	git commit -m"adding pdf [skip ci]"
 	git push origin main

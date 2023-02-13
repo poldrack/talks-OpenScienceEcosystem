@@ -25,10 +25,10 @@ Transparency is essential for reproducibility
 </div>
 
 
-![](./images/turingway_reproduducibilty.png){.absolute top="35%" left="15%" height="60%"}
+![](./images/turingway_reproduducibilty.png){.absolute top="30%" left="15%" height="60%"}
 
 
-:::{.absolute top="99%" left="30%" height="80%"}
+:::{.absolute top="95%" left="30%" height="80%"}
 <div style='font-size: 0.5em'>https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html</div>
 :::
 
@@ -210,31 +210,31 @@ Yarkoni et al, 2011, *Nature Methods*
 
 ## 
 
-![](./images/neurosynth_wm.png){.absolute top=0 left=15% height=90%}
+![](./images/neurosynth_wm.png){.absolute top=0 left=15% height=80%}
 
 
 
 ##
 
-![](./images/neurosynth_classification.png){.absolute top=0 left=15% height=35%}
+![](./images/neurosynth_classification.png){.absolute top=0 left=15% height=30%}
 
 
 
 ##
 
-![](./images/neurosynth_classification.png){.absolute top=0 left=15% height=35%}
+![](./images/neurosynth_classification.png){.absolute top=0 left=15% height=30%}
 
-![](./images/neurosynth_newsub.png){.absolute top=40% left=0% height=60%}
+![](./images/neurosynth_newsub.png){.absolute top=40% left=0% height=55%}
 
 
 ## Decoding brain activity patterns using Neurosynth
 
-![](./images/neurosynth_multiclass.png){.absolute top=10% left=15% height=130%}
+![](./images/neurosynth_multiclass.png){.absolute top=10% left=15% height=90%}
 
 
 ## Example of Neurosynth usage
 
-![](./images/margulies_title.png)
+![](./images/margulies_title.png){.absolute top=0% left=0%}
 ![](./images/margulies_date.png)
 
 :::: {.columns}
@@ -243,6 +243,8 @@ Yarkoni et al, 2011, *Nature Methods*
 :::
 ::: {.column width="50%"}
 <div style="font-size: 1.2em;">
+-
+-
 - Identified gradients of functional organization across the cortex
 - Used Neurosynth to identify the most common terms associated with each gradient
 </div>
@@ -261,7 +263,7 @@ Yarkoni et al, 2011, *Nature Methods*
 :::
 ::::
 
-::: {.absolute top=95% left=0}
+::: {.absolute top=90% left=0 style="font-size: 0.8em;"}
 Gorgolewski et al., 2015, *Frontiers in Neuroinformatics*
 :::
 
@@ -274,7 +276,7 @@ Gorgolewski et al., 2015, *Frontiers in Neuroinformatics*
 :::
 ::: {.column width="75%"}
 
-![](./images/neurovault_collection.png)
+![](./images/neurovault_collection.png){.absolute height=90%}
 :::
 ::::
 
@@ -288,30 +290,25 @@ Gorgolewski et al., 2015, *Frontiers in Neuroinformatics*
 :::
 ::: {.column width="60%"}
 
-![](./images/neurovault_browser.png){.absolute height=100%}
+![](./images/neurovault_browser.png){.absolute height=80%}
 :::
 ::::
 
 ## Example of Neurovault usage
 
-![](./images/menuet_title.png)
+![](./images/menuet_title.png){.absolute height=20% top=10%}
 
-![](./images/menuet_date.png)
+![](./images/menuet_date.png){.absolute left=0% top=30% height=10%%}
 
-:::: {.columns}
-::: {.column width="60%"}
-![](./images/menuet_fig1.png)
 
-:::
-::: {.column width="40%"}
-![](./images/menuet_fig3.png)
+![](./images/menuet_fig1.png){.absolute left=0% top=45% height=40%}
 
-:::
-::::
+![](./images/menuet_fig3.png){.absolute left=50% top=40% height=50%}
+
 
 ## OpenNeuro: Sharing raw and processed neuroimaging data
 
-![](./images/openeuro_landing.png){.absolute top=10% left=10% height=100%}
+![](./images/openeuro_landing.png){.absolute top=10% left=15% height=85%}
 
 ##
 
@@ -451,33 +448,33 @@ https://mriqc.nimh.nih.gov/
 
 ## BIDS enables a growing open-source software ecosystem
 
-![](https://www.nipreps.org/assets/nipreps-chart.png){.absolute top=10% left=15% height=140%}
+![](https://www.nipreps.org/assets/nipreps-chart.png){.absolute top=10% left=15% height=85%}
 
 
 ## BIDS Apps
 
-![](./images/bidsapps_title.png){.absolute top=0 left=0 height=60%}
-![](./images/bidsapps_date.png){.absolute top=65% left=0%, width=70%}
+![](./images/bidsapps_title.png){.absolute top=0 left=0 height=40%}
+![](./images/bidsapps_date.png){.absolute top=40% left=0%, width=50%}
 
-:::{.absolute top=80% style='font-size: 1.4em;'}
+:::{.absolute top=50% style='font-size: 1.2em;'}
 - Containerized applications that can be run on a BIDS dataset
   - Containers provide ease of use as well as better reproducibility
 :::
 
 ## fMRIprep: Robust preprocessing of fMRI data
 
-![](./images/fmriprep/fmriprep.jpg){.absolute top=10% left=10% height=95%}
+![](./images/fmriprep/fmriprep.jpg){.absolute top=10% left=10% height=80%}
 
-:::{.absolute top=100% style='font-size: 1.4em;'}
+:::{.absolute top=80% style='font-size: 1.2em;'}
 fmriprep.org; Esteban et al, 2019
 :::
 
 
 ## MRIQC: MRI quality control for BIDS data
 
-![](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0184661.g005){.absolute top=10% left=20% height=95%}
+![](https://journals.plos.org/plosone/article/figure/image?size=large&id=10.1371/journal.pone.0184661.g005){.absolute top=10% left=20% height=80%}
 
-:::{.absolute top=100% style='font-size: 1.4em;'}
+:::{.absolute top=90% style='font-size: 1.2em;'}
 mriqc.org; Esteban et al, 2017
 :::
 
@@ -635,7 +632,7 @@ brainlife.io: processing of MRI data
 :::
 ::: {.column width="50%"}
 NEMAR.org: processing of EEG/MEG data
-![](./images/nemar/datasummary.png){.absolute top=15% left=55% height=90%}
+![](./images/nemar/datasummary.png){.absolute top=15% left=55% height=80%}
 :::
 ::::
 
@@ -766,10 +763,10 @@ The Poldrack Lab
 <div style='text-align: center;font-size: 1.4em;fig-align: center'>
 Funding
 </div>
-![](./images/brain_initiative_logo.png){height="200px"}
-![](./images/nsf_logo.png){height="200px"}
-![](./images/ljaf.png){height="200px"}
-![](./images/NIH-NIMH-logo-new.png){height="200px"}
+![](./images/brain_initiative_logo.png){height="150px"}
+![](./images/nsf_logo.png){height="150px"}
+![](./images/ljaf.png){height="150px"}
+![](./images/NIH-NIMH-logo-new.png){height="150px"}
 
 
 :::
