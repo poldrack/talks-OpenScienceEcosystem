@@ -5,9 +5,10 @@
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.2.269">
+  <meta name="generator" content="quarto-99.9.9">
 
   <meta name="author" content="Russ Poldrack">
   <title>Toward an Open Science Ecosystem in Neuroimaging</title>
@@ -403,8 +404,8 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 <h2>A false start for fMRI data sharing</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="./images/OpenEcosystem_Feb202215.png" class="absolute" style="top: 10%; left: 0,; height: 30%; "></p>
-<p><img data-src="./images/OpenEcosystem_Feb202216.png" class="absolute" style="top: 50%; left: 0,; height: 20%; "></p>
+<p><img data-src="./images/OpenEcosystem_Feb202215.png" class="absolute" style="top: 10%; left: 0,; height: 25%; "></p>
+<p><img data-src="./images/OpenEcosystem_Feb202216.png" class="absolute" style="top: 50%; left: 0,; height: 17%; "></p>
 </div><div class="column" style="width:50%;">
 <p>This letter comes from a group of scientists who are publishing papers using fMRI to understand the links between brain and behavior. We are writing in reaction the recent announcement of the creation of the National fMRI Data Center (www.fmridc.org). In the letter announcing the creation of the center, it was also implied that leading journals in our field may require authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center. … We are particularly concerned with any journal’s decision to require all authors of all fMRI related papers accepted for publication to submit all experimental data pertaining to their paper to the Data Center.</p>
 </div>
@@ -566,7 +567,7 @@ https://the-turing-way.netlify.app/reproducible-research/overview/overview-defin
 </section>
 <section id="decoding-brain-activity-patterns-using-neurosynth" class="slide level2">
 <h2>Decoding brain activity patterns using Neurosynth</h2>
-<p><img data-src="./images/neurosynth_multiclass.png" class="absolute" style="top: 10%; left: 15%; height: 90%; "></p>
+<p><img data-src="./images/neurosynth_multiclass.png" class="absolute" style="top: 10%; left: 15%; height: 85%; "></p>
 </section>
 <section id="example-of-neurosynth-usage" class="slide level2">
 <h2>Example of Neurosynth usage</h2>
@@ -692,7 +693,7 @@ https://www.youtube.com/watch?v=N2zK3sAtr-4
 </ul></li>
 </ul>
 </div>
-<p><img data-src="./images/bids_logo.png" class="absolute" style="top: 40%; left: 0px; height: 30%; "> <img data-src="./images/bids_scidata.png" class="absolute" style="top: 40%; left: 50%; height: 50%; "></p>
+<p><img data-src="./images/bids_logo.png" class="absolute" style="top: 40%; left: 0px; height: 25%; "> <img data-src="./images/bids_scidata.png" class="absolute" style="top: 40%; left: 50%; height: 45%; "></p>
 </section>
 <section id="the-development-of-bids" class="slide level2">
 <h2>The development of BIDS</h2>
@@ -841,10 +842,11 @@ https://www.youtube.com/watch?v=N2zK3sAtr-4
 </ul>
 </div>
 </div><div class="column" style="width:50%;">
-<p><img data-src="./images/mriqc_webapi_title.png"></p>
-<p><img data-src="./images/mriqc_api_growth.png"></p>
+
 </div>
 </div>
+<p><img data-src="./images/mriqc_webapi_title.png" class="absolute" style="top: 10%; left: 50%; height: 25%; "></p>
+<p><img data-src="./images/mriqc_api_growth.png" class="absolute" style="top: 40%; left: 50%; height: 50%; "></p>
 </section>
 <section id="bids-enables-a-growing-open-source-software-ecosystem" class="slide level2">
 <h2>BIDS enables a growing open-source software ecosystem</h2>
@@ -1473,7 +1475,7 @@ Any valid BIDS dataset can be shared via OpenNeuro
         height: 1080,
 
         // Factor of the display size that should remain empty around the content
-        margin: 5.0e-2,
+        margin: 0.1,
 
         math: {
           mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
@@ -1576,7 +1578,7 @@ Any valid BIDS dataset can be shared via OpenNeuro
           },
           interactive: true,
           interactiveBorder: 10,
-          theme: 'quarto-reveal',
+          theme: 'light-border',
           placement: 'bottom-start'
         };
           config['offset'] = [0,0];

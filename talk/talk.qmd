@@ -8,7 +8,6 @@ title-slide-attributes:
 format:
   revealjs: 
     footer: "https://poldrack.github.io/talks-OpenScienceEcosystem/"
-    pdf-max-pages-per-slide: 1
     slide-number: true
     chalkboard: 
       buttons: false
@@ -16,7 +15,6 @@ format:
     theme: [default, rp-theme.scss]
     height: 1080
     width: 1920
-    margin: 0.05
 ---
 ##
 
@@ -83,9 +81,9 @@ Jon Claerbout
 :::: {.columns}
 
 ::: {.column width="50%"}
-![](./images/OpenEcosystem_Feb202215.png){.absolute top=10% left=0, height=30%}
+![](./images/OpenEcosystem_Feb202215.png){.absolute top=10% left=0, height=25%}
 
-![](./images/OpenEcosystem_Feb202216.png){.absolute top=50% left=0, height=20%}
+![](./images/OpenEcosystem_Feb202216.png){.absolute top=50% left=0, height=17%}
 :::
 
 ::: {.column width="50%"}
@@ -229,7 +227,7 @@ Yarkoni et al, 2011, *Nature Methods*
 
 ## Decoding brain activity patterns using Neurosynth
 
-![](./images/neurosynth_multiclass.png){.absolute top=10% left=15% height=90%}
+![](./images/neurosynth_multiclass.png){.absolute top=10% left=15% height=85%}
 
 
 ## Example of Neurosynth usage
@@ -354,8 +352,8 @@ Data Sharing and Management Snafu in 3 Short Acts
   - A file organization standard
   - A metadata standard
 </div>
-![](./images/bids_logo.png){.absolute top=40% left=0 height=30%}
-![](./images/bids_scidata.png){.absolute top=40% left=50% height=50%}
+![](./images/bids_logo.png){.absolute top=40% left=0 height=25%}
+![](./images/bids_scidata.png){.absolute top=40% left=50% height=45%}
 
 ## The development of BIDS
 <div style='font-size: 1.2em'>
@@ -439,12 +437,13 @@ https://mriqc.nimh.nih.gov/
 </div>
 :::
 ::: {.column width="50%"}
-![](./images/mriqc_webapi_title.png)
-
-![](./images/mriqc_api_growth.png)
 
 :::
 ::::
+![](./images/mriqc_webapi_title.png){.absolute top=10% left=50% height=25%}
+
+![](./images/mriqc_api_growth.png){.absolute top=40% left=50% height=50%}
+
 
 ## BIDS enables a growing open-source software ecosystem
 
